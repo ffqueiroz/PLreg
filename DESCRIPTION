@@ -12,6 +12,7 @@ Description: The package allows fitting power logit regression models for bounde
   are implemented. The estimation process follows the maximum likelihood approach
   and, currently, the package supports two types of estimators: the usual maximum 
   likelihood estimator and the penalized maximum likelihood estimator.
+URL: https://github.com/ffqueiroz/PLreg
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

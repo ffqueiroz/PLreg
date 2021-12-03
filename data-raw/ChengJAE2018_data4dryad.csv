@@ -1,0 +1,590 @@
+swab.id;site;date;cluster_size;sex;age;forearm;body.mass;fat.amt;fat.method;percent.fat
+WF16VT001;Aeolus;2015-Nov-17;1;F;NA;35.69;6.42;0.955;quantitative magnetic resonance;0.148753894
+WF16VT002;Aeolus;2015-Nov-17;2;F;NA;35.79;9.24;2.96;quantitative magnetic resonance;0.32034632
+WF16VT003;Aeolus;2015-Nov-17;2;F;NA;37.91;10.36;3.35;quantitative magnetic resonance;0.323359073
+WF16VT004;Aeolus;2015-Nov-17;2;F;NA;36.93;8.51;1.73;quantitative magnetic resonance;0.203290247
+WF16VT005;Aeolus;2015-Nov-17;2;M;NA;37.87;7.47;1.505;quantitative magnetic resonance;0.201472557
+WF16VT006;Aeolus;2015-Nov-17;10;M;NA;35.51;6.82;1.22;quantitative magnetic resonance;0.17888563
+WF16VT007;Aeolus;2015-Nov-17;10;M;NA;38.73;8.19;2.315;quantitative magnetic resonance;0.282661783
+WF16VT008;Aeolus;2015-Nov-17;10;M;NA;37.62;7.18;1.6;quantitative magnetic resonance;0.222841226
+WF16VT009;Aeolus;2015-Nov-17;10;F;NA;38.61;7.76;1.885;quantitative magnetic resonance;0.242912371
+WF16VT010;Aeolus;2015-Nov-17;10;M;NA;36.99;7.52;1.94;quantitative magnetic resonance;0.257978723
+WF16VT011;Aeolus;2015-Nov-17;10;M;NA;39.73;9;2.605;quantitative magnetic resonance;0.289444444
+WF16VT012;Aeolus;2015-Nov-17;10;F;NA;39.13;7.97;2.035;quantitative magnetic resonance;0.255332497
+WF16VT013;Aeolus;2015-Nov-17;10;F;NA;37.45;8.87;2.66;quantitative magnetic resonance;0.29988726
+WF16VT014;Aeolus;2015-Nov-17;10;M;NA;39.57;9.1;2.595;quantitative magnetic resonance;0.285164835
+WF16VT015;Aeolus;2015-Nov-17;10;M;NA;40.6;10.2;3.065;quantitative magnetic resonance;0.300490196
+WF16VT016;Aeolus;2015-Nov-17;5;M;NA;39.01;7.98;2.125;quantitative magnetic resonance;0.266290727
+WF16VT017;Aeolus;2015-Nov-17;5;F;NA;39.87;7.18;1.42;quantitative magnetic resonance;0.197771588
+WF16VT018;Aeolus;2015-Nov-17;5;F;NA;37.85;8.24;2.335;quantitative magnetic resonance;0.283373786
+WF16VT019;Aeolus;2015-Nov-17;5;F;NA;39.45;7.42;1.275;quantitative magnetic resonance;0.171832884
+WF16VT020;Aeolus;2015-Nov-17;5;F;NA;39.18;9.37;2.585;quantitative magnetic resonance;0.27588047
+WF16VT021;Aeolus;2016-Mar-09;1;M;NA;39.08;6.2;0.545;quantitative magnetic resonance;0.087903226
+WF16VT022;Aeolus;2016-Mar-09;1;M;NA;37.83;6.6;0.56;quantitative magnetic resonance;0.084848485
+WF16VT023;Aeolus;2016-Mar-09;1;F;NA;38.75;6.83;0.605;quantitative magnetic resonance;0.088579795
+WF16VT024;Aeolus;2016-Mar-09;1;F;NA;41.32;8.15;1.46;quantitative magnetic resonance;0.179141104
+WF16VT025;Aeolus;2016-Mar-09;1;M;NA;35.63;6.21;0.46;quantitative magnetic resonance;0.074074074
+WF16VT026;Aeolus;2016-Mar-09;1;F;NA;38.03;6.15;0.89;quantitative magnetic resonance;0.144715447
+WF16VT027;Aeolus;2016-Mar-09;1;F;NA;37.32;8.31;1.71;quantitative magnetic resonance;0.205776173
+WF16VT028;Aeolus;2016-Mar-09;1;M;NA;39.32;6.97;0.64;quantitative magnetic resonance;0.091822095
+WF16VT029;Aeolus;2016-Mar-09;1;F;NA;39.43;7.29;0.855;quantitative magnetic resonance;0.117283951
+WF16VT030;Aeolus;2016-Mar-09;1;M;NA;38.95;6.8;0.61;quantitative magnetic resonance;0.089705882
+WF16VT031;Aeolus;2016-Mar-09;1;M;NA;37.43;5.64;0.245;quantitative magnetic resonance;0.043439716
+WF16VT032;Aeolus;2016-Mar-09;1;M;NA;38.75;6.97;0.66;quantitative magnetic resonance;0.094691535
+WF16VT033;Aeolus;2016-Mar-09;2;M;NA;38.36;6.95;0.8;quantitative magnetic resonance;0.115107914
+WF16VT034;Aeolus;2016-Mar-09;2;F;NA;39.16;6.88;0.37;quantitative magnetic resonance;0.05377907
+WF16VT035;Aeolus;2016-Mar-09;25;M;NA;38.89;7.01;0.68;quantitative magnetic resonance;0.09700428
+WF16VT036;Aeolus;2016-Mar-09;25;F;NA;37.71;6.96;0.89;quantitative magnetic resonance;0.127873563
+WF16VT037;Aeolus;2016-Mar-09;25;M;NA;39.77;6.38;0.655;quantitative magnetic resonance;0.102664577
+WF16VT038;Aeolus;2016-Mar-09;25;M;NA;39.45;6.46;0.745;quantitative magnetic resonance;0.115325077
+WF16VT039;Aeolus;2016-Mar-09;25;M;NA;37.12;5.87;0.62;quantitative magnetic resonance;0.105621806
+WF16VT040;Aeolus;2016-Mar-09;25;F;NA;39.2;6.74;0.465;quantitative magnetic resonance;0.068991098
+WF16NY321;Barton Hill;2015-Nov-06;1;F;NA;38.23;8.08;2.32;quantitative magnetic resonance;0.287128713
+WF16NY322;Barton Hill;2015-Nov-06;1;M;NA;36.56;8.24;2.02;quantitative magnetic resonance;0.245145631
+WF16NY323;Barton Hill;2015-Nov-06;1;M;NA;37.75;6.9;1.41;quantitative magnetic resonance;0.204347826
+WF16NY324;Barton Hill;2015-Nov-06;1;F;NA;38.99;8.58;2.385;quantitative magnetic resonance;0.277972028
+WF16NY325;Barton Hill;2015-Nov-06;1;M;NA;39.85;8.65;1.745;quantitative magnetic resonance;0.201734104
+WF16NY326;Barton Hill;2015-Nov-06;2;F;NA;38.06;10.51;2.97;quantitative magnetic resonance;0.282588011
+WF16NY327;Barton Hill;2015-Nov-06;2;F;NA;38.71;9.79;2.795;quantitative magnetic resonance;0.285495403
+WF16NY328;Barton Hill;2015-Nov-06;2;F;NA;38.37;9.87;3.17;quantitative magnetic resonance;0.321175279
+WF16NY330;Barton Hill;2015-Nov-06;2;F;NA;38.27;8.06;1.815;quantitative magnetic resonance;0.225186104
+WF16NY331;Barton Hill;2015-Nov-06;1;M;NA;36.88;8.42;1.8;quantitative magnetic resonance;0.213776722
+WF16NY332;Barton Hill;2015-Nov-06;5;M;NA;38.48;8.28;1.745;quantitative magnetic resonance;0.210748792
+WF16NY333;Barton Hill;2015-Nov-06;5;M;NA;38.72;8.62;2.28;quantitative magnetic resonance;0.26450116
+WF16NY334;Barton Hill;2015-Nov-06;5;M;NA;38.18;8.41;1.965;quantitative magnetic resonance;0.233650416
+WF16NY335;Barton Hill;2015-Nov-06;2;F;NA;36.92;10.09;3.385;quantitative magnetic resonance;0.335480674
+WF16NY336;Barton Hill;2015-Nov-06;2;M;NA;37.25;7.91;1.745;quantitative magnetic resonance;0.220606827
+WF16NY337;Barton Hill;2015-Nov-06;3;F;NA;40.16;10.11;3.18;quantitative magnetic resonance;0.314540059
+WF16NY338;Barton Hill;2015-Nov-06;1;M;NA;38.66;8.12;1.945;quantitative magnetic resonance;0.23953202
+WF16NY339;Barton Hill;2015-Nov-06;1;F;NA;38.4;7.46;1.135;quantitative magnetic resonance;0.152144772
+WF16NY340;Barton Hill;2015-Nov-06;1;F;NA;37.58;9.19;2.625;quantitative magnetic resonance;0.285636561
+WF16NY586;Barton Hill;2016-Mar-04;4;M;NA;38.48;6.51;0.625;quantitative magnetic resonance;0.096006144
+WF16NY587;Barton Hill;2016-Mar-04;4;F;NA;37.6;6.73;1.095;quantitative magnetic resonance;0.162704309
+WF16NY588;Barton Hill;2016-Mar-04;4;F;NA;37.84;6.56;0.755;quantitative magnetic resonance;0.115091463
+WF16NY589;Barton Hill;2016-Mar-04;4;F;NA;37.61;6.33;0.665;quantitative magnetic resonance;0.105055292
+WF16NY590;Barton Hill;2016-Mar-04;1;F;NA;38.86;6.83;0.955;quantitative magnetic resonance;0.139824305
+WF16NY591;Barton Hill;2016-Mar-04;15;M;NA;38.78;6.45;0.66;quantitative magnetic resonance;0.102325581
+WF16NY592;Barton Hill;2016-Mar-04;1;M;NA;38.96;6.43;0.605;quantitative magnetic resonance;0.094090202
+WF16NY593;Barton Hill;2016-Mar-04;3;F;NA;37.79;6.35;0.695;quantitative magnetic resonance;0.109448819
+WF16NY594;Barton Hill;2016-Mar-04;3;F;NA;40.07;7.06;1.095;quantitative magnetic resonance;0.15509915
+WF16NY595;Barton Hill;2016-Mar-04;3;F;NA;38.57;6.67;0.715;quantitative magnetic resonance;0.107196402
+WF16NY596;Barton Hill;2016-Mar-04;15;M;NA;38.42;5.83;0.73;quantitative magnetic resonance;0.125214408
+WF16NY597;Barton Hill;2016-Mar-04;15;F;NA;41.28;8.25;1.42;quantitative magnetic resonance;0.172121212
+WF16NY598;Barton Hill;2016-Mar-04;15;F;NA;38.5;6.28;0.855;quantitative magnetic resonance;0.136146497
+WF16NY599;Barton Hill;2016-Mar-04;15;F;NA;39.04;6.66;0.685;quantitative magnetic resonance;0.102852853
+WF16NY600;Barton Hill;2016-Mar-04;15;F;NA;39.21;6.18;0.535;quantitative magnetic resonance;0.086569579
+WF16NY601;Barton Hill;2016-Mar-04;15;F;NA;37.96;6.45;1.155;quantitative magnetic resonance;0.179069767
+WF16NY602;Barton Hill;2016-Mar-04;15;F;NA;39.14;7.87;1.32;quantitative magnetic resonance;0.16772554
+WF16NY603;Barton Hill;2016-Mar-04;15;F;NA;38.98;6.64;0.77;quantitative magnetic resonance;0.115963855
+WF16NY604;Barton Hill;2016-Mar-04;15;M;NA;37.81;6.71;0.81;quantitative magnetic resonance;0.12071535
+WF16NY605;Barton Hill;2016-Mar-04;15;M;NA;38.78;6.39;0.625;quantitative magnetic resonance;0.097809077
+WF16NY301;Graphite;2015-Nov-05;NA;M;NA;36.98;8.77;1.96;quantitative magnetic resonance;0.223489168
+WF16NY302;Graphite;2015-Nov-05;NA;M;NA;38.75;8.18;2.095;quantitative magnetic resonance;0.256112469
+WF16NY303;Graphite;2015-Nov-05;NA;M;NA;39.35;9.14;2.436.666.667;quantitative magnetic resonance;0.266593727
+WF16NY304;Graphite;2015-Nov-05;NA;F;NA;38.51;9.01;2.22;quantitative magnetic resonance;0.246392897
+WF16NY305;Graphite;2015-Nov-05;NA;M;NA;37.97;9.13;2.43;quantitative magnetic resonance;0.266155531
+WF16NY306;Graphite;2015-Nov-05;NA;F;NA;37.51;9.26;3.135;quantitative magnetic resonance;0.338552916
+WF16NY307;Graphite;2015-Nov-05;NA;M;NA;38.92;9.4;2.22;quantitative magnetic resonance;0.236170213
+WF16NY308;Graphite;2015-Nov-05;NA;M;NA;38.77;8.66;2.345;quantitative magnetic resonance;0.270785219
+WF16NY309;Graphite;2015-Nov-05;NA;M;NA;37.57;9.36;3.195;quantitative magnetic resonance;0.341346154
+WF16NY310;Graphite;2015-Nov-05;NA;M;NA;38.68;10.905;4.29;quantitative magnetic resonance;0.393397524
+WF16NY311;Graphite;2015-Nov-05;NA;F;NA;39.22;9.09;2.385;quantitative magnetic resonance;0.262376238
+WF16NY312;Graphite;2015-Nov-05;NA;F;NA;37.33;10.61;3.545;quantitative magnetic resonance;0.334118756
+WF16NY313;Graphite;2015-Nov-05;NA;M;NA;37.96;8.94;2.815;quantitative magnetic resonance;0.314876957
+WF16NY314;Graphite;2015-Nov-05;NA;M;NA;38;8.91;2.085;quantitative magnetic resonance;0.234006734
+WF16NY315;Graphite;2015-Nov-05;NA;M;NA;38;8.34;1.84;quantitative magnetic resonance;0.220623501
+WF16NY316;Graphite;2015-Nov-05;NA;F;NA;39.45;9.83;2.935;quantitative magnetic resonance;0.298575788
+WF16NY317;Graphite;2015-Nov-05;NA;M;NA;40.15;10.83;3.57;quantitative magnetic resonance;0.329639889
+WF16NY318;Graphite;2015-Nov-05;NA;M;NA;36.84;9.64;3.245;quantitative magnetic resonance;0.336618257
+WF16NY319;Graphite;2015-Nov-05;NA;M;NA;38.31;9.95;3.255;quantitative magnetic resonance;0.327135678
+WF16NY320;Graphite;2015-Nov-05;NA;M;NA;37.78;9.45;3.03;quantitative magnetic resonance;0.320634921
+NA;Graphite;2016-Mar-10;6;M;NA;38.75;7.47;0.925;quantitative magnetic resonance;0.123828648
+NA;Graphite;2016-Mar-10;6;M;NA;37.92;7.62;1.305;quantitative magnetic resonance;0.171259843
+NA;Graphite;2016-Mar-10;6;M;NA;38.47;6.82;0.885;quantitative magnetic resonance;0.129765396
+NA;Graphite;2016-Mar-10;6;F;NA;37.52;6.66;0.785;quantitative magnetic resonance;0.117867868
+NA;Graphite;2016-Mar-10;6;M;NA;38.57;7.1;0.98;quantitative magnetic resonance;0.138028169
+NA;Graphite;2016-Mar-10;2;M;NA;39.72;7.21;0.585;quantitative magnetic resonance;0.081137309
+NA;Graphite;2016-Mar-10;3;F;NA;36.29;8.1;1.56;quantitative magnetic resonance;0.192592593
+NA;Graphite;2016-Mar-10;2;M;NA;37.27;6.04;0.755;quantitative magnetic resonance;0.125
+NA;Graphite;2016-Mar-10;3;M;NA;37.61;6.95;0.795;quantitative magnetic resonance;0.114388489
+NA;Graphite;2016-Mar-10;3;M;NA;38.09;7.02;1.105;quantitative magnetic resonance;0.157407407
+NA;Graphite;2016-Mar-10;1;M;NA;36.01;6.62;0.925;quantitative magnetic resonance;0.139728097
+NA;Graphite;2016-Mar-10;7;M;NA;39.28;7.7;1.175;quantitative magnetic resonance;0.152597403
+NA;Graphite;2016-Mar-10;1;M;NA;37.26;6.79;0.775;quantitative magnetic resonance;0.114138439
+NA;Graphite;2016-Mar-10;2;M;NA;37.93;7.46;0.9;quantitative magnetic resonance;0.120643432
+NA;Graphite;2016-Mar-10;2;M;NA;37.58;7.41;1.355;quantitative magnetic resonance;0.182860999
+NA;Graphite;2016-Mar-10;1;M;NA;39;7.36;1.24;quantitative magnetic resonance;0.168478261
+NA;Graphite;2016-Mar-10;2;F;NA;38.41;7.76;1.05;quantitative magnetic resonance;0.135309278
+NA;Graphite;2016-Mar-10;2;M;NA;38.57;7.28;0.91;quantitative magnetic resonance;0.125
+NA;Graphite;2016-Mar-10;1;F;NA;37.86;6.82;0.805;quantitative magnetic resonance;0.118035191
+NA;Graphite;2016-Mar-10;1;F;NA;38.61;7.89;0.925;quantitative magnetic resonance;0.117237009
+WF16NJ041;Hibernia;2015-Nov-18;2;F;NA;37.83;9.76;3.165;quantitative magnetic resonance;0.324282787
+WF16NJ042;Hibernia;2015-Nov-18;2;M;NA;37.86;8.77;2.49;quantitative magnetic resonance;0.283922463
+WF16NJ043;Hibernia;2015-Nov-18;1;M;NA;38.66;8.6;2.54;quantitative magnetic resonance;0.295348837
+WF16NJ044;Hibernia;2015-Nov-18;1;M;NA;39.18;10.28;3.175;quantitative magnetic resonance;0.30885214
+WF16NJ045;Hibernia;2015-Nov-18;1;F;NA;40.88;9.23;2.875;quantitative magnetic resonance;0.31148429
+WF16NJ046;Hibernia;2015-Nov-18;1;M;NA;38.49;9.32;2.633.333.333;quantitative magnetic resonance;0.282546495
+WF16NJ047;Hibernia;2015-Nov-18;1;F;NA;38.59;8.05;1.905;quantitative magnetic resonance;0.236645963
+WF16NJ048;Hibernia;2015-Nov-18;11;M;NA;36.38;9.36;2.9;quantitative magnetic resonance;0.30982906
+WF16NJ049;Hibernia;2015-Nov-18;11;M;NA;37.97;8.47;1.87;quantitative magnetic resonance;0.220779221
+WF16NJ050;Hibernia;2015-Nov-18;11;M;NA;37.46;8.36;1.935;quantitative magnetic resonance;0.23145933
+WF16NJ051;Hibernia;2015-Nov-18;11;M;NA;37.77;7.88;1.99;quantitative magnetic resonance;0.252538071
+WF16NJ052;Hibernia;2015-Nov-18;1;F;NA;39.14;10.43;3.325;quantitative magnetic resonance;0.318791946
+WF16NJ053;Hibernia;2015-Nov-18;11;M;NA;37.25;7.99;2.405;quantitative magnetic resonance;0.301001252
+WF16NJ054;Hibernia;2015-Nov-18;11;M;NA;37.59;8.15;1.79;quantitative magnetic resonance;0.219631902
+WF16NJ055;Hibernia;2015-Nov-18;3;M;NA;38.27;8.53;1.69;quantitative magnetic resonance;0.198124267
+WF16NJ056;Hibernia;2015-Nov-18;3;M;NA;40.39;8.96;2.375;quantitative magnetic resonance;0.265066964
+WF16NJ057;Hibernia;2015-Nov-18;3;M;NA;38.68;8.8;2.455;quantitative magnetic resonance;0.278977273
+WF16NJ058;Hibernia;2015-Nov-18;2;M;NA;38.09;8.79;2.495;quantitative magnetic resonance;0.283845279
+WF16NJ059;Hibernia;2015-Nov-18;1;F;NA;37.69;9.1;2.48;quantitative magnetic resonance;0.272527473
+WF16NJ060;Hibernia;2015-Nov-18;1;M;NA;38.52;7.4;1.685;quantitative magnetic resonance;0.227702703
+WF16NJ001;Hibernia;2016-Mar-21;1;F;NA;38;7.3;1.316.315.789;quantitative magnetic resonance;0.180317231
+WF16NJ004;Hibernia;2016-Mar-21;2;F;NA;38.3;7.7;154.694.517;quantitative magnetic resonance;0.20090197
+WF16NJ008;Hibernia;2016-Mar-21;6;M;NA;37.9;6.4;0.716728232;quantitative magnetic resonance;0.111988786
+WF16NJ011;Hibernia;2016-Mar-21;1;M;NA;37.6;7.2;1.300.425.532;quantitative magnetic resonance;0.180614657
+WF16NJ014;Hibernia;2016-Mar-21;6;M;NA;38.1;6.6;0.829291339;quantitative magnetic resonance;0.125650203
+WF16NJ017;Hibernia;2016-Mar-21;6;M;NA;38.1;7.2;1.235.590.551;quantitative magnetic resonance;0.171609799
+WF16NJ018;Hibernia;2016-Mar-21;4;M;NA;37.1;6.5;0.880215633;quantitative magnetic resonance;0.13541779
+WF16NJ019;Hibernia;2016-Mar-21;1;M;NA;37.9;7.1;1.193.245.383;quantitative magnetic resonance;0.16806273
+WF16NJ020;Hibernia;2016-Mar-21;2;F;NA;38.5;7.5;1.385.974.026;quantitative magnetic resonance;0.184796537
+WF16NJ021;Hibernia;2016-Mar-21;2;F;NA;38.8;7.2;1.147.628.866;quantitative magnetic resonance;0.159392898
+WF16NJ022;Hibernia;2016-Mar-21;3;M;NA;37.9;6.7;0.920949868;quantitative magnetic resonance;0.137455204
+WF16NJ023;Hibernia;2016-Mar-21;1;F;NA;37.6;7.5;1.506.276.596;quantitative magnetic resonance;0.200836879
+WF16NJ024;Hibernia;2016-Mar-21;2;M;NA;37.3;6.3;0.717640751;quantitative magnetic resonance;0.11391123
+WF16NJ025;Hibernia;2016-Mar-21;2;F;NA;39.5;7.8;1.454.683.544;quantitative magnetic resonance;0.18649789
+WF16NJ026;Hibernia;2016-Mar-21;1;M;NA;35;5.7;0.561714286;quantitative magnetic resonance;0.098546366
+WF16NJ027;Hibernia;2016-Mar-21;1;M;NA;37.6;7.2;1.300.425.532;quantitative magnetic resonance;0.180614657
+WF16NJ028;Hibernia;2016-Mar-21;2;M;NA;37.2;6.4;0.798709677;quantitative magnetic resonance;0.124798387
+WF16NJ029;Hibernia;2016-Mar-21;1;M;NA;37;7.4;1.52;quantitative magnetic resonance;0.205405405
+WF16NJ030;Hibernia;2016-Mar-21;1;M;NA;36.5;7.4;1.590.684.932;quantitative magnetic resonance;0.214957423
+WF16NJ031;Hibernia;2016-Mar-21;1;F;NA;37.4;6.5;0.843957219;quantitative magnetic resonance;0.129839572
+NA;Williams Hotel;2015-Nov-13;1;F;NA;35.69;6.24;0.965;quantitative magnetic resonance;0.154647436
+NA;Williams Hotel;2015-Nov-13;2;F;NA;37.57;7.87;1.705;quantitative magnetic resonance;0.216645489
+NA;Williams Hotel;2015-Nov-13;2;F;NA;37.34;6.72;1.03;quantitative magnetic resonance;0.15327381
+NA;Williams Hotel;2015-Nov-13;1;F;NA;36.93;7.74;1.615;quantitative magnetic resonance;0.208656331
+NA;Williams Hotel;2015-Nov-13;1;F;NA;38.85;6.74;0.895;quantitative magnetic resonance;0.132789318
+NA;Williams Hotel;2015-Nov-13;11;M;NA;38.26;7.53;1.81;quantitative magnetic resonance;0.240371846
+NA;Williams Hotel;2015-Nov-13;11;M;NA;37.27;7.38;1.64;quantitative magnetic resonance;0.222222222
+NA;Williams Hotel;2015-Nov-13;11;M;NA;37.81;7.2;1.475;quantitative magnetic resonance;0.204861111
+NA;Williams Hotel;2015-Nov-13;11;M;NA;37.65;7.3;1.645;quantitative magnetic resonance;0.225342466
+NA;Williams Hotel;2015-Nov-13;11;M;NA;37.24;6.86;1.355;quantitative magnetic resonance;0.197521866
+NA;Williams Hotel;2015-Nov-13;1;M;NA;37.94;7.56;1.415;quantitative magnetic resonance;0.187169312
+NA;Williams Hotel;2015-Nov-13;4;M;NA;37.73;7.13;1.22;quantitative magnetic resonance;0.171107994
+NA;Williams Hotel;2015-Nov-13;4;M;NA;38.59;7.8;1.395;quantitative magnetic resonance;0.178846154
+NA;Williams Hotel;2015-Nov-13;4;M;NA;37.71;8.2;1.85;quantitative magnetic resonance;0.225609756
+NA;Williams Hotel;2015-Nov-13;4;M;NA;38.26;6.97;0.915;quantitative magnetic resonance;0.131276901
+NA;Williams Hotel;2015-Nov-13;11;F;NA;38.66;8.26;1.85;quantitative magnetic resonance;0.223970944
+NA;Williams Hotel;2015-Nov-13;11;M;NA;39.37;8.39;1.945;quantitative magnetic resonance;0.2318236
+NA;Williams Hotel;2015-Nov-13;11;M;NA;35.75;7.67;1.36;quantitative magnetic resonance;0.177314211
+NA;Williams Hotel;2015-Nov-13;11;M;NA;37.58;7.2;1.34;quantitative magnetic resonance;0.186111111
+NA;Williams Hotel;2015-Nov-13;11;M;NA;36.56;6.8;1.315;quantitative magnetic resonance;0.193382353
+WF16NY555;Williams Hotel;2016-Feb-17;1;F;NA;38.49;6.55;0.98;quantitative magnetic resonance;0.149618321
+WF16NY556;Williams Hotel;2016-Feb-17;3;M;NA;36.6;5.88;0.6;quantitative magnetic resonance;0.102040816
+WF16NY557;Williams Hotel;2016-Feb-17;3;F;NA;36.49;6.77;1.12;quantitative magnetic resonance;0.165435746
+WF16NY558;Williams Hotel;2016-Feb-17;3;F;NA;36.72;6.53;1.04;quantitative magnetic resonance;0.159264931
+WF16NY559;Williams Hotel;2016-Feb-17;1;F;NA;37.15;6.95;0.735;quantitative magnetic resonance;0.105755396
+WF16NY560;Williams Hotel;2016-Feb-17;15;F;NA;39.78;8.04;1.355;quantitative magnetic resonance;0.168532338
+WF16NY561;Williams Hotel;2016-Feb-17;15;F;NA;38.44;7.17;0.91;quantitative magnetic resonance;0.126917713
+WF16NY562;Williams Hotel;2016-Feb-17;15;M;NA;36.68;6.98;1.09;quantitative magnetic resonance;0.156160458
+WF16NY563;Williams Hotel;2016-Feb-17;15;F;NA;38.69;6.54;1.105;quantitative magnetic resonance;0.168960245
+WF16NY564;Williams Hotel;2016-Feb-17;15;M;NA;36.85;6.45;1.16;quantitative magnetic resonance;0.179844961
+WF16NY565;Williams Hotel;2016-Feb-17;25;F;NA;36.65;7.06;1.48;quantitative magnetic resonance;0.209631728
+WF16NY566;Williams Hotel;2016-Feb-17;25;F;NA;39.28;7.83;1.38;quantitative magnetic resonance;0.176245211
+WF16NY567;Williams Hotel;2016-Feb-17;25;M;NA;39.53;6.64;0.925;quantitative magnetic resonance;0.139307229
+WF16NY568;Williams Hotel;2016-Feb-17;25;M;NA;37.76;6.68;1.055;quantitative magnetic resonance;0.157934132
+WF16NY569;Williams Hotel;2016-Feb-17;25;M;NA;36.89;6.83;1.115;quantitative magnetic resonance;0.163250366
+WF16NY570;Williams Hotel;2016-Feb-17;25;M;NA;38.29;6.66;0.925;quantitative magnetic resonance;0.138888889
+WF16NY571;Williams Hotel;2016-Feb-17;25;M;NA;37.92;6.91;1.115;quantitative magnetic resonance;0.161360347
+WF16NY572;Williams Hotel;2016-Feb-17;3;M;NA;36.96;7.14;1.35;quantitative magnetic resonance;0.18907563
+WF16NY573;Williams Hotel;2016-Feb-17;3;F;NA;36.4;6.32;1.075;quantitative magnetic resonance;0.170094937
+WF16NY574;Williams Hotel;2016-Feb-17;3;F;NA;37.31;8.25;2.065;quantitative magnetic resonance;0.25030303
+WF16NY341;Williams Preserve;2015-Nov-13;3;F;NA;36.95;8.16;1.915;quantitative magnetic resonance;0.234681373
+WF16NY342;Williams Preserve;2015-Nov-13;2;F;NA;39.34;9.21;2.315;quantitative magnetic resonance;0.25135722
+WF16NY343;Williams Preserve;2015-Nov-13;5;F;NA;37.91;8.6;2.525;quantitative magnetic resonance;0.293604651
+WF16NY344;Williams Preserve;2015-Nov-13;5;F;NA;37.9;8.42;1.695;quantitative magnetic resonance;0.201306413
+WF16NY345;Williams Preserve;2015-Nov-13;1;F;NA;35.6;9.38;2.49;quantitative magnetic resonance;0.265458422
+WF16NY346;Williams Preserve;2015-Nov-13;0;F;NA;38.56;11.51;4.195;quantitative magnetic resonance;0.364465682
+WF16NY347;Williams Preserve;2015-Nov-13;5;F;NA;39.06;8.94;2.415;quantitative magnetic resonance;0.270134228
+WF16NY348;Williams Preserve;2015-Nov-13;1;M;NA;35.66;7.86;1.675;quantitative magnetic resonance;0.213104326
+WF16NY349;Williams Preserve;2015-Nov-13;1;M;NA;35.45;8.76;2.615;quantitative magnetic resonance;0.298515982
+WF16NY350;Williams Preserve;2015-Nov-13;2;M;NA;36.63;7;1.68;quantitative magnetic resonance;0.24
+WF16NY351;Williams Preserve;2015-Nov-13;2;M;NA;36.3;7.81;1.785;quantitative magnetic resonance;0.228553137
+WF16NY352;Williams Preserve;2015-Nov-13;2;M;NA;37.51;8.07;2.08;quantitative magnetic resonance;0.257744734
+WF16NY353;Williams Preserve;2015-Nov-13;2;M;NA;36.2;8;1.84;quantitative magnetic resonance;0.23
+WF16NY354;Williams Preserve;2015-Nov-13;1;M;NA;36.63;9.1;2.845;quantitative magnetic resonance;0.312637363
+WF16NY355;Williams Preserve;2015-Nov-13;1;M;NA;35.56;7.75;2.055;quantitative magnetic resonance;0.26516129
+WF16NY356;Williams Preserve;2015-Nov-13;15;F;NA;35.67;6.72;1.54;quantitative magnetic resonance;0.229166667
+WF16NY357;Williams Preserve;2015-Nov-13;5;F;NA;39.55;9.18;2.67;quantitative magnetic resonance;0.290849673
+WF16NY358;Williams Preserve;2015-Nov-13;1;M;NA;35.21;7.58;1.57;quantitative magnetic resonance;0.207124011
+WF16NY359;Williams Preserve;2015-Nov-13;2;M;NA;37.9;7.4;1.67;quantitative magnetic resonance;0.225675676
+WF16NY360;Williams Preserve;2015-Nov-13;1;F;NA;39.45;10.22;3.1;quantitative magnetic resonance;0.30332681
+WF16NY501;Williams Preserve;2016-Feb-16;12;F;NA;36.99;7.04;1.115;quantitative magnetic resonance;0.158380682
+WF16NY502;Williams Preserve;2016-Feb-16;12;M;NA;37.78;5.99;0.675;quantitative magnetic resonance;0.112687813
+WF16NY503;Williams Preserve;2016-Feb-16;2;M;NA;37.28;5.72;0.73;quantitative magnetic resonance;0.127622378
+WF16NY504;Williams Preserve;2016-Feb-16;2;M;NA;38.25;6.58;0.82;quantitative magnetic resonance;0.124620061
+WF16NY505;Williams Preserve;2016-Feb-16;7;F;NA;37.65;7;0.86;quantitative magnetic resonance;0.122857143
+WF16NY506;Williams Preserve;2016-Feb-16;7;F;NA;38.4;6.74;0.72;quantitative magnetic resonance;0.106824926
+WF16NY507;Williams Preserve;2016-Feb-16;6;M;NA;37.06;6.54;0.815;quantitative magnetic resonance;0.124617737
+WF16NY508;Williams Preserve;2016-Feb-16;6;M;NA;36.77;6.8;0.885;quantitative magnetic resonance;0.130147059
+WF16NY509;Williams Preserve;2016-Feb-16;6;M;NA;36.17;6.86;1.025;quantitative magnetic resonance;0.14941691000000001
+WF16NY510;Williams Preserve;2016-Feb-16;6;M;NA;36.67;6.18;0.645;quantitative magnetic resonance;0.104368932
+WF16NY511;Williams Preserve;2016-Feb-16;5;F;NA;38.76;7.7;1.37;quantitative magnetic resonance;0.177922078
+WF16NY512;Williams Preserve;2016-Feb-16;5;F;NA;38.26;7.77;1.515;quantitative magnetic resonance;0.194980695
+WF16NY513;Williams Preserve;2016-Feb-16;5;M;NA;38.44;6.3;0.77;quantitative magnetic resonance;0.122222222
+WF16NY514;Williams Preserve;2016-Feb-16;1;M;NA;35.69;5.43;0.63;quantitative magnetic resonance;0.116022099
+WF16NY515;Williams Preserve;2016-Feb-16;1;F;NA;39.44;7.05;0.725;quantitative magnetic resonance;0.102836879
+WF16NY516;Williams Preserve;2016-Feb-16;4;F;NA;38.39;7.7;1.25;quantitative magnetic resonance;0.162337662
+WF16NY517;Williams Preserve;2016-Feb-16;4;F;NA;38.89;7.83;1.275;quantitative magnetic resonance;0.162835249
+WF16NY518;Williams Preserve;2016-Feb-16;1;M;NA;39.18;7.02;1.18;quantitative magnetic resonance;0.168091168
+WF16NY519;Williams Preserve;2016-Feb-16;9;F;NA;38.21;6.69;1.105;quantitative magnetic resonance;0.165171898
+WF16NY520;Williams Preserve;2016-Feb-16;9;F;NA;37.89;7.78;1.93;quantitative magnetic resonance;0.248071979
+NA;Aeolus;2008-Nov-18;NA;F;A;39.4;6.04;0.7895;soxhlet;0.130711921
+NA;Aeolus;2008-Nov-18;NA;M;A;38.2;7.54;1.335;soxhlet;0.177055703
+NA;Aeolus;2008-Nov-18;NA;M;J;37.4;7.24;12.232;soxhlet;0.168950276
+NA;Aeolus;2008-Nov-18;NA;M;J;38;7.14;0.9477;soxhlet;0.132731092
+NA;Aeolus;2008-Nov-18;NA;M;J;35.8;6.92;16.624;soxhlet;0.240231214
+NA;Aeolus;2008-Nov-18;NA;F;J;37.1;6.66;10.799;soxhlet;0.162147147
+NA;Aeolus;2008-Nov-18;NA;M;J;38;6.05;0.741;soxhlet;0.122479339
+NA;Aeolus;2008-Nov-18;NA;M;J;36.5;6.69;12.569;soxhlet;0.187877429
+NA;Aeolus;2008-Nov-18;NA;F;J;37.9;6.88;14.374;soxhlet;0.208924419
+NA;Aeolus;2008-Nov-18;NA;M;A;36.8;7.43;11.161;soxhlet;0.150215343
+NA;Aeolus;2008-Nov-18;NA;M;J;38.6;6.51;12.105;soxhlet;0.1859447
+NA;Aeolus;2008-Nov-18;NA;F;A;36.4;6.8;1.409;soxhlet;0.207205882
+NA;Aeolus;2008-Nov-18;NA;M;A;35.7;7.43;1.057;soxhlet;0.142261104
+NA;Aeolus;2008-Nov-18;NA;F;J;39;7.28;12.129;soxhlet;0.166607143
+NA;Aeolus;2008-Nov-18;NA;M;A;37.3;7.27;0.8061;soxhlet;0.11088033
+NA;Aeolus;2008-Nov-18;NA;F;A;37.8;7.32;15.675;soxhlet;0.214139344
+NA;Aeolus;2008-Nov-18;NA;M;A;36.4;6.89;10.528;soxhlet;0.152801161
+NA;Aeolus;2008-Nov-18;NA;F;J;37.7;7.5;16.751;soxhlet;0.223346667
+NA;Aeolus;2008-Nov-18;NA;M;A;40;7.23;11.112;soxhlet;0.153692946
+NA;Aeolus;2008-Nov-18;NA;F;A;38.3;7.5;11.904;soxhlet;0.15872
+NA;Aeolus;2008-Nov-18;NA;F;A;38.1;8.2;18.916;soxhlet;0.230682927
+NA;Aeolus;2008-Nov-18;NA;F;A;36.6;7.2;1.19;soxhlet;0.165277778
+NA;Aeolus;2008-Nov-18;NA;F;A;39.4;7.6;13.903;soxhlet;0.182934211
+NA;Aeolus;2008-Nov-18;NA;F;A;40;7.91;1.135;soxhlet;0.143489254
+NA;Aeolus;2008-Nov-18;NA;F;A;38.5;NA;16.448;soxhlet;NA
+NA;Aeolus;2008-Nov-18;NA;F;A;37.9;7.6;1.179;soxhlet;0.155131579
+NA;Aeolus;2008-Nov-18;NA;F;A;40.3;7.9;1.27;soxhlet;0.160759494
+NA;Aeolus;2008-Nov-18;NA;F;A;39.5;8.29;16.886;soxhlet;0.203691194
+NA;Aeolus;2008-Nov-18;NA;F;A;38.1;6.8;10.195;soxhlet;0.149926471
+NA;Aeolus;2008-Nov-18;NA;F;A;40.9;7.68;0.9438;soxhlet;0.122890625
+NA;Aeolus;2008-Nov-18;NA;F;A;38.2;7.57;15.297;soxhlet;0.202073976
+NA;Aeolus;2008-Nov-18;NA;F;A;37.9;7;12.746;soxhlet;0.182085714
+NA;Aeolus;2008-Nov-18;NA;F;A;37.5;7.65;1.34;soxhlet;0.175163399
+NA;Aeolus;2008-Nov-18;NA;F;A;40.3;8.4;1.464;soxhlet;0.174285714
+NA;Aeolus;2008-Nov-18;NA;F;A;38.6;7.15;11.509;soxhlet;0.160965035
+NA;Aeolus;2008-Nov-18;NA;F;A;37.6;8.2;22.176;soxhlet;0.270439024
+NA;Aeolus;2009-Jan-31;NA;M;A;41.1;7.01;0.5914;soxhlet;0.084365193
+NA;Aeolus;2009-Jan-31;NA;M;A;36.9;6.58;0.5988;soxhlet;0.09100304
+NA;Aeolus;2009-Jan-31;NA;M;A;38.1;6.94;0.3187;soxhlet;0.04592219
+NA;Aeolus;2009-Jan-31;NA;M;A;37.1;6.67;0.4714;soxhlet;0.070674663
+NA;Aeolus;2009-Jan-31;NA;M;A;39.3;7.13;0.7574;soxhlet;0.106227209
+NA;Aeolus;2009-Jan-31;NA;M;A;37.8;6.41;0.4702;soxhlet;0.073354134
+NA;Aeolus;2009-Jan-31;NA;M;J;36.8;5.79;0.3851;soxhlet;0.066511226
+NA;Aeolus;2009-Jan-31;NA;F;J;39.4;6.81;0.6514;soxhlet;0.095653451
+NA;Aeolus;2009-Jan-31;NA;F;J;38.9;6.23;0.4613;soxhlet;0.074044944
+NA;Aeolus;2009-Jan-31;NA;M;A;37.9;6.13;0.6054;soxhlet;0.098760196
+NA;Aeolus;2009-Jan-31;NA;M;A;38.2;5.75;0.6005;soxhlet;0.104434783
+NA;Aeolus;2009-Jan-31;NA;M;J;36.6;5.52;0.7896;soxhlet;0.143043478
+NA;Aeolus;2009-Jan-31;NA;M;A;36.4;5.9;0.4598;soxhlet;0.077932203
+NA;Aeolus;2009-Jan-31;NA;M;J;37.1;5.18;0.2313;soxhlet;0.04465251
+NA;Aeolus;2009-Jan-31;NA;M;A;36.7;6.48;0.7312;soxhlet;0.112839506
+NA;Aeolus;2009-Jan-31;NA;M;A;36.4;6.42;0.8654;soxhlet;0.134797508
+NA;Aeolus;2009-Jan-31;NA;F;J;38.6;6.98;0.6477;soxhlet;0.092793696
+NA;Aeolus;2009-Jan-31;NA;F;J;37.9;6.48;0.3422;soxhlet;0.052808642
+NA;Aeolus;2009-Jan-31;NA;M;J;38.5;6.59;0.6004;soxhlet;0.091107739
+NA;Aeolus;2009-Jan-31;NA;M;A;38.2;6.56;0.4006;soxhlet;0.061067073
+NA;Aeolus;2009-Jan-31;NA;M;J;35.8;5.29;0.422;soxhlet;0.079773157
+NA;Aeolus;2009-Jan-31;NA;F;J;37.2;6.83;0.6953;soxhlet;0.101800878
+NA;Aeolus;2009-Jan-31;NA;F;J;38.8;6.38;0.36870000000000003;soxhlet;0.057789969
+NA;Aeolus;2009-Jan-31;NA;F;J;38.9;5.99;0.1524;soxhlet;0.025442404
+NA;Aeolus;2009-Jan-31;NA;F;A;39.7;7.39;0.386;soxhlet;0.052232747
+NA;Aeolus;2009-Jan-31;NA;F;A;38.7;6.09;0.6523;soxhlet;0.107110016
+NA;Aeolus;2009-Jan-31;NA;F;A;37.7;6.68;0.3192;soxhlet;0.047784431
+NA;Aeolus;2009-Jan-31;NA;F;A;38.4;6.94;0.444;soxhlet;0.063976945
+NA;Aeolus;2009-Jan-31;NA;F;A;37.8;7.02;0.2474;soxhlet;0.035242165
+NA;Aeolus;2009-Jan-31;NA;F;A;38.5;7.36;0.4049;soxhlet;0.055013587
+NA;Aeolus;2009-Jan-31;NA;F;A;38;6.89;0.4272;soxhlet;0.062002903
+NA;Aeolus;2009-Jan-31;NA;F;A;39.1;6.56;0.2983;soxhlet;0.045472561
+NA;Aeolus;2009-Jan-31;NA;F;A;38.5;6.32;0.5741;soxhlet;0.090838608
+NA;Aeolus;2009-Jan-31;NA;F;A;37.5;6.5;0.3185;soxhlet;0.049
+NA;Aeolus;2009-Jan-31;NA;F;A;38.8;6.28;0.4033;soxhlet;0.064219745
+NA;Aeolus;2009-Jan-31;NA;F;A;37.2;6.96;0.289;soxhlet;0.041522989
+NA;Aeolus;2009-Jan-31;NA;F;A;36.6;6.21;0.4964;soxhlet;0.079935588
+NA;Aeolus;2009-Jan-31;NA;F;A;38.9;6.66;0.6003;soxhlet;0.090135135
+NA;Aeolus;2009-Jan-31;NA;F;A;39.1;7.64;10.444;soxhlet;0.136701571
+NA;Aeolus;2009-Jan-31;NA;F;A;37.5;7.37;0.4458;soxhlet;0.060488467
+NA;Aeolus;2009-Jan-31;NA;F;A;37.2;6.46;0.4947;soxhlet;0.076578947
+NA;Aeolus;2009-Jan-31;NA;F;A;40;7.13;0.3016;soxhlet;0.04230014
+NA;Aeolus;2009-Jan-31;NA;F;A;36.8;6.53;0.5311;soxhlet;0.081332312
+NA;Aeolus;2009-Jan-31;NA;F;A;38.5;6.85;0.663;soxhlet;0.096788321
+NA;Aeolus;2009-Jan-31;NA;F;A;39;6.47;0.4599;soxhlet;0.071081917
+NA;Aeolus;2009-Mar-27;NA;M;A;37.5;6.36;0.2643;soxhlet;0.041556604
+NA;Aeolus;2009-Mar-27;NA;M;A;38;6.25;0.3447;soxhlet;0.055152
+NA;Aeolus;2009-Mar-27;NA;M;A;37.5;6.33;0.3284;soxhlet;0.051879937
+NA;Aeolus;2009-Mar-27;NA;M;A;36.4;6.04;0.3079;soxhlet;0.050976821
+NA;Aeolus;2009-Mar-27;NA;M;A;36.8;6.48;0.4921;soxhlet;0.075941358
+NA;Aeolus;2009-Mar-27;NA;M;J;37.7;6.66;0.3663;soxhlet;0.055
+NA;Aeolus;2009-Mar-27;NA;M;J;37.8;5.82;0.3714;soxhlet;0.063814433
+NA;Aeolus;2009-Mar-27;NA;M;J;36.9;6.1;0.5956;soxhlet;0.097639344
+NA;Aeolus;2009-Mar-27;NA;M;A;38.4;6.78;0.4317;soxhlet;0.063672566
+NA;Aeolus;2009-Mar-27;NA;M;A;37.4;5.88;0.2278;soxhlet;0.038741497
+NA;Aeolus;2009-Mar-27;NA;F;J;38.5;6.07;0.4106;soxhlet;0.067644152
+NA;Aeolus;2009-Mar-27;NA;M;J;37.2;6.65;0.2915;soxhlet;0.043834586
+NA;Aeolus;2009-Mar-27;NA;M;J;38.6;6.88;0.5588;soxhlet;0.08122093
+NA;Aeolus;2009-Mar-27;NA;M;J;36.2;6.92;0.7616;soxhlet;0.110057803
+NA;Aeolus;2009-Mar-27;NA;M;J;37;5.75;0.3832;soxhlet;0.066643478
+NA;Aeolus;2009-Mar-27;NA;F;J;36.3;6.13;0.4739;soxhlet;0.07730832
+NA;Aeolus;2009-Mar-27;NA;F;J;39;6.85;0.4383;soxhlet;0.063985401
+NA;Aeolus;2009-Mar-27;NA;F;J;37.6;5.55;0.2123;soxhlet;0.038252252
+NA;Aeolus;2009-Mar-27;NA;F;J;36.9;6.7;0.5576;soxhlet;0.083223881
+NA;Aeolus;2009-Mar-27;NA;F;J;37.7;5.91;0.3786;soxhlet;0.064060914
+NA;Aeolus;2009-Mar-27;NA;F;A;39.1;6.55;0.5675;soxhlet;0.086641221
+NA;Aeolus;2009-Mar-27;NA;F;A;38.4;7.21;0.6787;soxhlet;0.094133148
+NA;Aeolus;2009-Mar-27;NA;F;A;38;6.36;0.2856;soxhlet;0.04490566
+NA;Aeolus;2009-Mar-27;NA;F;A;36.2;6.15;0.392;soxhlet;0.063739837
+NA;Aeolus;2009-Mar-27;NA;F;A;37.4;6.95;0.3377;soxhlet;0.048589928
+NA;Aeolus;2009-Mar-27;NA;F;A;38.6;6.64;0.4332;soxhlet;0.065240964
+NA;Aeolus;2009-Mar-27;NA;F;A;37.6;7;0.6638;soxhlet;0.094828571
+NA;Aeolus;2009-Mar-27;NA;F;A;37.2;6.68;0.28;soxhlet;0.041916168
+NA;Aeolus;2009-Mar-27;NA;F;A;38.6;6.83;0.509;soxhlet;0.074524158
+NA;Aeolus;2009-Mar-27;NA;F;A;37.5;7.65;1.052;soxhlet;0.13751634
+NA;Aeolus;2009-Mar-27;NA;F;A;37;6.52;0.6186;soxhlet;0.094877301
+NA;Aeolus;2009-Mar-27;NA;F;A;37.8;7.07;0.4585;soxhlet;0.064851485
+NA;Aeolus;2009-Mar-27;NA;F;A;40.6;6.65;0.5755;soxhlet;0.086541353
+NA;Aeolus;2009-Mar-27;NA;F;A;37.2;6.92;0.6731;soxhlet;0.097268786
+NA;Aeolus;2009-Mar-27;NA;F;A;38.5;7.07;0.577;soxhlet;0.081612447
+NA;Aeolus;2009-Mar-27;NA;F;A;37.4;6.05;0.434;soxhlet;0.071735537
+NA;Aeolus;2009-Mar-27;NA;F;A;38.6;6.65;0.4762;soxhlet;0.071609023
+NA;Aeolus;2009-Mar-27;NA;F;A;38.9;6.93;0.4662;soxhlet;0.067272727
+NA;Aeolus;2009-Mar-27;NA;F;A;38.2;6.85;0.4059;soxhlet;0.059255474
+NA;Graphite;2008-Nov-18;NA;M;A;38.5;7.8;14.119;soxhlet;0.181012821
+NA;Graphite;2008-Nov-18;NA;M;J;36.3;7.2;11.513;soxhlet;0.159902778
+NA;Graphite;2008-Nov-18;NA;M;A;39.2;7.3;12.817;soxhlet;0.175575342
+NA;Graphite;2008-Nov-18;NA;F;A;37.6;9.4;21.556;soxhlet;0.229319149
+NA;Graphite;2008-Nov-18;NA;M;J;37.3;9.2;23.303;soxhlet;0.253293478
+NA;Graphite;2008-Nov-18;NA;F;A;36.3;9.8;27.528;soxhlet;0.280897959
+NA;Graphite;2008-Nov-18;NA;F;A;39;10;25.137;soxhlet;0.25137
+NA;Graphite;2008-Nov-18;NA;F;J;39.3;7.8;16.349;soxhlet;0.209602564
+NA;Graphite;2008-Nov-18;NA;M;J;36.7;8.5;19.181;soxhlet;0.225658824
+NA;Graphite;2008-Nov-18;NA;F;J;39;7.6;17.577;soxhlet;0.231276316
+NA;Graphite;2008-Nov-18;NA;M;A;37;7.5;14.718;soxhlet;0.19624
+NA;Graphite;2008-Nov-18;NA;F;A;38.5;8.1;13.821;soxhlet;0.17062963
+NA;Graphite;2008-Nov-18;NA;M;A;37.7;8.2;16.732;soxhlet;0.20404878
+NA;Graphite;2008-Nov-18;NA;M;A;37.5;7.5;1.362;soxhlet;0.1816
+NA;Graphite;2008-Nov-18;NA;M;A;40.2;8.1;13.297;soxhlet;0.164160494
+NA;Graphite;2008-Nov-18;NA;M;J;38.3;7.8;0.937;soxhlet;0.120128205
+NA;Graphite;2008-Nov-18;NA;F;A;37.1;9.5;23.969;soxhlet;0.252305263
+NA;Graphite;2008-Nov-18;NA;F;A;38.77;8.5;16.284;soxhlet;0.191576471
+NA;Graphite;2008-Nov-18;NA;F;A;37.9;7.2;15.739;soxhlet;0.218597222
+NA;Graphite;2008-Nov-18;NA;F;A;38.6;9;20.449;soxhlet;0.227211111
+NA;Graphite;2008-Nov-18;NA;M;J;38.3;7.9;13.438;soxhlet;0.170101266
+NA;Graphite;2008-Nov-18;NA;F;A;36.3;7.5;13.935;soxhlet;0.1858
+NA;Graphite;2008-Nov-18;NA;F;A;37.3;8.7;22.066;soxhlet;0.253632184
+NA;Graphite;2008-Nov-18;NA;F;A;37.2;8;16.113;soxhlet;0.2014125
+NA;Graphite;2008-Nov-18;NA;F;J;37;7.4;15.826;soxhlet;0.213864865
+NA;Graphite;2008-Nov-18;NA;F;A;37.3;8.5;14.629;soxhlet;0.172105882
+NA;Graphite;2008-Nov-18;NA;F;J;36.2;8.8;22.281;soxhlet;0.253193182
+NA;Graphite;2009-Jan-12;NA;F;A;38.5;7.7;10.841;soxhlet;0.140792208
+NA;Graphite;2009-Jan-12;NA;M;A;37.4;6.8;0.9188;soxhlet;0.135117647
+NA;Graphite;2009-Jan-12;NA;M;A;36.4;6.8;0.7643;soxhlet;0.112397059
+NA;Graphite;2009-Jan-12;NA;M;A;38.3;7.5;0.7984;soxhlet;0.106453333
+NA;Graphite;2009-Jan-12;NA;F;J;39;6.6;0.8276;soxhlet;0.125393939
+NA;Graphite;2009-Jan-12;NA;F;J;37.5;7.8;17.503;soxhlet;0.224397436
+NA;Graphite;2009-Jan-12;NA;M;J;37.8;7.3;11.504;soxhlet;0.157589041
+NA;Graphite;2009-Jan-12;NA;M;A;39.1;7.9;13.065;soxhlet;0.165379747
+NA;Graphite;2009-Jan-12;NA;M;A;38.8;8.3;1.718;soxhlet;0.206987952
+NA;Graphite;2009-Jan-12;NA;F;A;39.4;9.9;27.512;soxhlet;0.27789899
+NA;Graphite;2009-Jan-12;NA;F;J;37.7;6.9;0.7737;soxhlet;0.112130435
+NA;Graphite;2009-Jan-12;NA;F;J;38.9;6.9;0.7916;soxhlet;0.114724638
+NA;Graphite;2009-Jan-12;NA;F;J;37.5;6.8;12.059;soxhlet;0.177338235
+NA;Graphite;2009-Jan-12;NA;M;A;37.5;7;11.849;soxhlet;0.169271429
+NA;Graphite;2009-Jan-12;NA;F;A;40.8;7;12.542;soxhlet;0.179171429
+NA;Graphite;2009-Jan-12;NA;M;A;36.4;7.2;11.688;soxhlet;0.162333333
+NA;Graphite;2009-Jan-12;NA;M;J;37.3;6.6;0.7792;soxhlet;0.118060606
+NA;Graphite;2009-Jan-12;NA;M;A;36.6;7.9;14.792;soxhlet;0.187240506
+NA;Graphite;2009-Jan-12;NA;F;J;38.8;6.8;0.326;soxhlet;0.047941176
+NA;Graphite;2009-Jan-12;NA;F;A;39.9;7.9;10.463;soxhlet;0.132443038
+NA;Graphite;2009-Jan-12;NA;F;A;38.8;7.7;15.291;soxhlet;0.198584416
+NA;Graphite;2009-Jan-12;NA;M;A;37.4;7.8;13.915;soxhlet;0.178397436
+NA;Graphite;2009-Jan-12;NA;F;A;36.7;7.1;10.147;soxhlet;0.142915493
+NA;Graphite;2009-Jan-12;NA;M;A;37.2;7.2;1.059;soxhlet;0.147083333
+NA;Graphite;2009-Mar-19;NA;F;A;38.7;7.4;0.8936;soxhlet;0.120756757
+NA;Graphite;2009-Mar-19;NA;M;A;37.5;6.5;0.3633;soxhlet;0.055892308
+NA;Graphite;2009-Mar-19;NA;F;A;38.6;7.7;0.9299;soxhlet;0.120766234
+NA;Graphite;2009-Mar-19;NA;M;A;37.9;5.8;0.3092;soxhlet;0.053310345
+NA;Graphite;2009-Mar-19;NA;M;A;38.8;7.1;0.6833;soxhlet;0.096239437
+NA;Graphite;2009-Mar-19;NA;F;A;38.8;9.4;20.318;soxhlet;0.216148936
+NA;Graphite;2009-Mar-19;NA;M;A;39;7.2;0.7255;soxhlet;0.100763889
+NA;Graphite;2009-Mar-19;NA;F;J;38.8;7.7;10.591;soxhlet;0.137545455
+NA;Graphite;2009-Mar-19;NA;F;A;38.4;7.7;0.9846;soxhlet;0.12787013
+NA;Graphite;2009-Mar-19;NA;M;A;35.7;6;0.701;soxhlet;0.116833333
+NA;Graphite;2009-Mar-19;NA;M;A;37.9;8.2;0.5478;soxhlet;0.066804878
+NA;Graphite;2009-Mar-19;NA;M;A;36.6;7.1;0.7859;soxhlet;0.110690141
+NA;Graphite;2009-Mar-19;NA;M;J;39.9;7.2;10.783;soxhlet;0.149763889
+NA;Graphite;2009-Mar-19;NA;F;A;38;8.2;12.075;soxhlet;0.147256098
+NA;Graphite;2009-Mar-19;NA;F;A;37.7;7.4;0.8275;soxhlet;0.111824324
+NA;Graphite;2009-Mar-19;NA;F;J;38.8;6.7;0.5218;soxhlet;0.077880597
+NA;Graphite;2009-Mar-19;NA;F;A;39.2;7.7;0.869;soxhlet;0.112857143
+NA;Graphite;2009-Mar-19;NA;F;J;38.4;7.5;12.278;soxhlet;0.163706667
+NA;Graphite;2009-Mar-19;NA;M;A;37.2;6.6;0.5541;soxhlet;0.083954545
+NA;Graphite;2009-Mar-19;NA;F;A;36.2;6.6;0.6321;soxhlet;0.095772727
+NA;Graphite;2009-Mar-19;NA;M;J;37.8;6.1;0.5105;soxhlet;0.083688525
+NA;Graphite;2009-Mar-19;NA;F;A;38.6;6.8;0.5383;soxhlet;0.079161765
+NA;Graphite;2009-Mar-19;NA;F;A;39.1;7;0.7955;soxhlet;0.113642857
+NA;Graphite;2009-Mar-19;NA;M;A;38.2;6.1;0.3689;soxhlet;0.06047541
+NA;Graphite;2009-Mar-19;NA;M;J;37.5;6.5;0.5223;soxhlet;0.080353846
+NA;Graphite;2009-Mar-19;NA;M;A;40.2;6.9;0.6948;soxhlet;0.100695652
+NA;Hibernia;2008-Nov-25;NA;M;A;36.3;7.88;17.143;soxhlet;0.217550761
+NA;Hibernia;2008-Nov-25;NA;M;A;36.3;7.83;13.782;soxhlet;0.176015326
+NA;Hibernia;2008-Nov-25;NA;M;A;36;8.85;19.829;soxhlet;0.224056497
+NA;Hibernia;2008-Nov-25;NA;M;J;34.4;8.96;22.735;soxhlet;0.253738839
+NA;Hibernia;2008-Nov-25;NA;M;J;36.3;7.63;17.485;soxhlet;0.229161206
+NA;Hibernia;2008-Nov-25;NA;M;A;38.9;7.51;15.198;soxhlet;0.202370173
+NA;Hibernia;2008-Nov-25;NA;M;J;36.6;6.5;13.046;soxhlet;0.200707692
+NA;Hibernia;2008-Nov-25;NA;F;A;38.8;7.77;10.132;soxhlet;0.13039897
+NA;Hibernia;2008-Nov-25;NA;F;A;36.6;7.66;18.441;soxhlet;0.240744125
+NA;Hibernia;2008-Nov-25;NA;F;A;38;8.02;16.233;soxhlet;0.202406484
+NA;Hibernia;2008-Nov-25;NA;M;J;36.8;6.44;11.991;soxhlet;0.186195652
+NA;Hibernia;2008-Nov-25;NA;M;A;36.4;6.8;14.795;soxhlet;0.217573529
+NA;Hibernia;2008-Nov-25;NA;M;A;37.9;7.31;12.611;soxhlet;0.1725171
+NA;Hibernia;2008-Nov-25;NA;M;J;35.6;6.7;11.711;soxhlet;0.174791045
+NA;Hibernia;2008-Nov-25;NA;M;J;35;7.81;0.9416;soxhlet;0.12056338
+NA;Hibernia;2008-Nov-25;NA;F;A;36.2;7.41;13.118;soxhlet;0.177031039
+NA;Hibernia;2008-Nov-25;NA;F;A;39;7.32;12.694;soxhlet;0.173415301
+NA;Hibernia;2008-Nov-25;NA;M;J;35.7;6.64;15.186;soxhlet;0.228704819
+NA;Hibernia;2008-Nov-25;NA;M;J;38.3;6.75;20.336;soxhlet;0.301274074
+NA;Hibernia;2008-Nov-25;NA;F;A;38.8;7.38;10.905;soxhlet;0.147764228
+NA;Hibernia;2008-Nov-25;NA;F;A;37.9;8.66;18.828;soxhlet;0.217413395
+NA;Hibernia;2008-Nov-25;NA;F;A;36.5;8.3;1.973;soxhlet;0.237710843
+NA;Hibernia;2008-Nov-25;NA;F;J;37.8;8.34;17.056;soxhlet;0.204508393
+NA;Hibernia;2008-Nov-25;NA;F;J;37.5;8.29;21.005;soxhlet;0.253377563
+NA;Hibernia;2008-Nov-25;NA;F;A;37.9;7.87;14.685;soxhlet;0.186594663
+NA;Hibernia;2008-Nov-25;NA;F;A;38.6;NA;12.245;soxhlet;NA
+NA;Hibernia;2008-Nov-25;NA;M;J;37.1;7.19;12.742;soxhlet;0.177218359
+NA;Hibernia;2009-Jan-13;NA;M;A;35.6;6.2;0.9427;soxhlet;0.152048387
+NA;Hibernia;2009-Jan-13;NA;F;J;37.2;6.86;13.067;soxhlet;0.19048105
+NA;Hibernia;2009-Jan-13;NA;M;J;36.9;6.72;0.9638;soxhlet;0.143422619
+NA;Hibernia;2009-Jan-13;NA;M;J;36.4;6.94;10.035;soxhlet;0.144596542
+NA;Hibernia;2009-Jan-13;NA;F;A;37.7;7.23;0.9697;soxhlet;0.134121715
+NA;Hibernia;2009-Jan-13;NA;F;J;36.7;5.67;0.7056;soxhlet;0.124444444
+NA;Hibernia;2009-Jan-13;NA;M;A;36.7;8.27;0.9404;soxhlet;0.113712213
+NA;Hibernia;2009-Jan-13;NA;F;J;36.9;6.95;13.739;soxhlet;0.197683453
+NA;Hibernia;2009-Jan-13;NA;M;A;36.2;6.64;0.8692;soxhlet;0.130903614
+NA;Hibernia;2009-Jan-13;NA;M;A;35.8;7.34;1.161;soxhlet;0.158174387
+NA;Hibernia;2009-Jan-13;NA;M;J;35.6;5.4;0.5984;soxhlet;0.110814815
+NA;Hibernia;2009-Jan-13;NA;M;J;35.5;5.49;0.7179;soxhlet;0.130765027
+NA;Hibernia;2009-Jan-13;NA;M;J;37.8;6.41;0.809;soxhlet;0.126209048
+NA;Hibernia;2009-Jan-13;NA;M;J;37.5;5.81;0.8372;soxhlet;0.144096386
+NA;Hibernia;2009-Jan-13;NA;M;J;37.4;5.63;0.3895;soxhlet;0.069182948
+NA;Hibernia;2009-Jan-13;NA;F;A;37.3;7.5;1.249;soxhlet;0.166533333
+NA;Hibernia;2009-Jan-13;NA;F;J;37.9;6.83;10.476;soxhlet;0.153382138
+NA;Hibernia;2009-Jan-13;NA;F;J;35.7;5.84;10.076;soxhlet;0.172534247
+NA;Hibernia;2009-Jan-13;NA;F;A;38;5.38;0.7664;soxhlet;0.142453532
+NA;Hibernia;2009-Jan-13;NA;F;A;37.7;6.76;0.6388;soxhlet;0.094497041
+NA;Hibernia;2009-Jan-13;NA;F;A;33.2;6.26;0.5366;soxhlet;0.08571885
+NA;Hibernia;2009-Jan-13;NA;F;A;37.3;6.6;0.9021;soxhlet;0.136681818
+NA;Hibernia;2009-Jan-13;NA;F;A;37.7;6.47;0.9277;soxhlet;0.143384853
+NA;Hibernia;2009-Jan-13;NA;F;A;37.6;7;0.5786;soxhlet;0.082657143
+NA;Hibernia;2009-Jan-13;NA;F;A;38.7;6.93;0.5434;soxhlet;0.078412698
+NA;Hibernia;2009-Jan-13;NA;F;A;37.5;6.61;0.9315;soxhlet;0.140922844
+NA;Hibernia;2009-Jan-13;NA;F;A;36.4;7.9;10.923;soxhlet;0.138265823
+NA;Hibernia;2009-Jan-13;NA;F;A;36.7;7.54;14.907;soxhlet;0.19770557
+NA;Hibernia;2009-Jan-13;NA;F;A;37.6;7.74;0.6388;soxhlet;0.0825323
+NA;Hibernia;2009-Jan-13;NA;F;A;38.1;6.57;0.6757;soxhlet;0.102846271
+NA;Hibernia;2009-Jan-13;NA;F;A;36.7;8.1;15.576;soxhlet;0.192296296
+NA;Hibernia;2009-Jan-13;NA;F;A;37.6;7.26;0.7149;soxhlet;0.098471074
+NA;Hibernia;2009-Jan-13;NA;F;A;37.9;6.84;10.764;soxhlet;0.157368421
+NA;Hibernia;2009-Jan-13;NA;F;A;38.1;6.01;0.223;soxhlet;0.037104825
+NA;Hibernia;2009-Jan-13;NA;F;A;36.2;6.38;0.5557;soxhlet;0.087100313
+NA;Hibernia;2009-Jan-13;NA;F;A;36;6.85;0.7576;soxhlet;0.11059854
+NA;Hibernia;2009-Jan-13;NA;F;A;36.3;6.36;0.7425;soxhlet;0.116745283
+NA;Hibernia;2009-Mar-15;NA;F;A;37.3;6.03;0.6215;soxhlet;0.103067993
+NA;Hibernia;2009-Mar-15;NA;F;A;36.7;6.65;0.7447;soxhlet;0.111984962
+NA;Hibernia;2009-Mar-15;NA;F;A;38.5;6.67;0.5665;soxhlet;0.084932534
+NA;Hibernia;2009-Mar-15;NA;F;A;37.4;6.8;0.8067;soxhlet;0.118632353
+NA;Hibernia;2009-Mar-15;NA;F;A;36.2;6.34;0.6115;soxhlet;0.096451104
+NA;Hibernia;2009-Mar-15;NA;F;A;36.2;6.24;0.568;soxhlet;0.091025641
+NA;Hibernia;2009-Mar-15;NA;F;A;37.2;6.91;0.4835;soxhlet;0.069971056
+NA;Hibernia;2009-Mar-15;NA;F;A;37.3;6.94;0.7658;soxhlet;0.110345821
+NA;Hibernia;2009-Mar-15;NA;F;A;38.5;6.45;0.7216;soxhlet;0.111875969
+NA;Hibernia;2009-Mar-15;NA;F;A;38;7.13;0.7216;soxhlet;0.101206171
+NA;Hibernia;2009-Mar-15;NA;F;A;37.9;6.73;0.4528;soxhlet;0.067280832
+NA;Hibernia;2009-Mar-15;NA;F;A;38.5;6.64;0.7216;soxhlet;0.108674699
+NA;Hibernia;2009-Mar-15;NA;F;A;38.2;6.64;0.5975;soxhlet;0.08998494
+NA;Hibernia;2009-Mar-15;NA;F;A;37.1;6.9;0.7216;soxhlet;0.10457971
+NA;Hibernia;2009-Mar-15;NA;F;A;36.8;6.64;0.7216;soxhlet;0.108674699
+NA;Hibernia;2009-Mar-15;NA;F;A;36.4;5.91;0.5074;soxhlet;0.085854484
+NA;Hibernia;2009-Mar-15;NA;F;A;38.5;6.56;0.7216;soxhlet;0.11
+NA;Hibernia;2009-Mar-15;NA;F;A;37.6;7.1;0.7216;soxhlet;0.101633803
+NA;Hibernia;2009-Mar-16;NA;F;A;35.1;5.82;0.5652;soxhlet;0.097113402
+NA;Hibernia;2009-Mar-16;NA;M;J;36.1;6.01;0.5658;soxhlet;0.094143095
+NA;Hibernia;2009-Mar-16;NA;F;J;36.3;6.29;0.8645;soxhlet;0.137440382
+NA;Hibernia;2009-Mar-16;NA;M;A;37.1;6.21;0.5611;soxhlet;0.090354267
+NA;Hibernia;2009-Mar-16;NA;M;J;38.2;6.8;0.5046;soxhlet;0.074205882
+NA;Hibernia;2009-Mar-16;NA;M;A;37.3;5.34;0.4422;soxhlet;0.082808989
+NA;Hibernia;2009-Mar-16;NA;M;J;36.2;5.56;0.3594;soxhlet;0.064640288
+NA;Hibernia;2009-Mar-16;NA;F;J;36.8;6.23;0.5541;soxhlet;0.08894061
+NA;Hibernia;2009-Mar-16;NA;M;J;37.2;5.9;0.4019;soxhlet;0.068118644
+NA;Hibernia;2009-Mar-16;NA;F;J;37;6.48;0.7187;soxhlet;0.110910494
+NA;Hibernia;2009-Mar-16;NA;M;J;36.5;6.21;0.4992;soxhlet;0.080386473
+NA;Hibernia;2009-Mar-16;NA;M;A;37.1;6.3;0.4122;soxhlet;0.065428571
+NA;Hibernia;2009-Mar-16;NA;M;A;36.2;5.95;0.4462;soxhlet;0.074991597
+NA;Hibernia;2009-Mar-16;NA;F;J;37.4;6.03;0.5483;soxhlet;0.09092869
+NA;Hibernia;2009-Mar-16;NA;F;J;35;5.76;15.185;soxhlet;0.263628472
+NA;Hibernia;2009-Mar-16;NA;F;J;37.2;6.64;0.8102;soxhlet;0.122018072
+NA;Hibernia;2009-Mar-16;NA;M;J;36.5;5.79;0.4008;soxhlet;0.069222798
+NA;Hibernia;2009-Mar-16;NA;M;J;36.4;6.03;1.757;soxhlet;0.291376451
+NA;Hibernia;2009-Mar-16;NA;M;J;37.7;6.43;0.3865;soxhlet;0.060108865
+NA;Williams Hotel;2008-Dec-17;NA;F;A;39.4;7.99;12.101;soxhlet;0.151451815
+NA;Williams Hotel;2008-Dec-17;NA;F;A;36.4;7.42;11.946;soxhlet;0.160997305
+NA;Williams Hotel;2008-Dec-17;NA;F;A;38.1;7.92;14.768;soxhlet;0.186464646
+NA;Williams Hotel;2008-Dec-17;NA;F;A;38.5;7.17;14.021;soxhlet;0.195550907
+NA;Williams Hotel;2008-Dec-17;NA;F;A;39.2;7.87;14.591;soxhlet;0.185400254
+NA;Williams Hotel;2008-Dec-17;NA;F;A;36.9;6.93;0.9632;soxhlet;0.138989899
+NA;Williams Hotel;2008-Dec-17;NA;F;A;36.2;7.26;15.234;soxhlet;0.209834711
+NA;Williams Hotel;2008-Dec-17;NA;F;A;40.1;7.94;15.131;soxhlet;0.190566751
+NA;Williams Hotel;2008-Dec-17;NA;F;A;39;8.6;1.757;soxhlet;0.204302326
+NA;Williams Hotel;2008-Dec-17;NA;F;A;38.7;8.14;14.855;soxhlet;0.182493857
+NA;Williams Hotel;2008-Dec-17;NA;F;A;37.9;8.75;17.909;soxhlet;0.204674286
+NA;Williams Hotel;2008-Dec-17;NA;F;A;38.9;7.48;11.472;soxhlet;0.153368984
+NA;Williams Hotel;2008-Dec-17;NA;F;A;37.7;7.49;16.882;soxhlet;0.225393858
+NA;Williams Hotel;2008-Dec-17;NA;F;A;36.3;7.54;14.893;soxhlet;0.197519894
+NA;Williams Hotel;2008-Dec-17;NA;F;A;37;8.35;18.963;soxhlet;0.227101796
+NA;Williams Hotel;2008-Dec-17;NA;F;A;37.8;7.23;15.408;soxhlet;0.213112033
+NA;Williams Hotel;2008-Dec-17;NA;F;A;37.1;7.44;14.036;soxhlet;0.188655914
+NA;Williams Hotel;2008-Dec-17;NA;F;A;38;8.25;18.662;soxhlet;0.22620606100000001
+NA;Williams Hotel;2008-Feb-12;NA;F;A;38.2;6.54;0.937696429;soxhlet;0.143378659
+NA;Williams Hotel;2008-Feb-12;NA;M;A;37.7;5.85;0.658696;soxhlet;0.112597607
+NA;Williams Hotel;2008-Feb-12;NA;M;A;38.4;8.47;13.479;soxhlet;0.15913813499999999
+NA;Williams Hotel;2008-Feb-12;NA;F;A;38.2;6.63;0.822996;soxhlet;0.124132127
+NA;Williams Preserve;2008-Feb-14;NA;F;A;36.8;6.48;0.9339;soxhlet;0.14412037
+NA;Williams Preserve;2008-Feb-14;NA;M;A;36.6;6.16;0.7678;soxhlet;0.124642857
+NA;Williams Preserve;2008-Feb-14;NA;F;J;38.2;6.49;0.4594;soxhlet;0.070785824
+NA;Williams Preserve;2008-Feb-14;NA;F;A;34.7;6.35;0.7808;soxhlet;0.12296063
+NA;Williams Preserve;2008-Feb-14;NA;F;J;39.7;6.23;0.5717;soxhlet;0.09176565
+NA;Williams Preserve;2008-Feb-14;NA;F;A;35.5;5.91;0.5671;soxhlet;0.095956007
+NA;Barton Hill;2008-Mar-26;NA;M;A;36.1;5.85;0.572;soxhlet;0.097777778
+NA;Barton Hill;2008-Mar-26;NA;M;A;39.3;7.28;0.8225;soxhlet;0.112980769
+NA;Barton Hill;2008-Mar-26;NA;F;A;40.1;7.3;0.7411;soxhlet;0.101520548
+NA;Barton Hill;2008-Mar-26;NA;F;A;38.9;8.74;14.815;soxhlet;0.169508009
+NA;Barton Hill;2008-Mar-26;NA;M;A;38.5;8.21;0.8826;soxhlet;0.107503045
+NA;Barton Hill;2008-Mar-26;NA;F;J;40.3;6.15;10.571;soxhlet;0.171886179
+NA;Barton Hill;2008-Mar-26;NA;M;A;37.5;6.42;0.9709;soxhlet;0.15123053
+NA;Barton Hill;2008-Mar-26;NA;M;A;37.7;6.15;0.6759;soxhlet;0.109902439
+NA;Barton Hill;2008-Mar-26;NA;M;A;37.1;6.58;0.8555;soxhlet;0.130015198
+NA;Barton Hill;2008-Mar-26;NA;M;A;39.3;6.65;0.7893;soxhlet;0.118691729
+NA;Barton Hill;2008-Mar-26;NA;M;A;39.6;6.92;0.9147;soxhlet;0.132182081
+NA;Barton Hill;2008-Mar-26;NA;M;A;40.2;6.94;0.986;soxhlet;0.142074928
+NA;Barton Hill;2008-Mar-26;NA;M;J;39.1;6.71;0.7005;soxhlet;0.104396423
+NA;Barton Hill;2008-Mar-26;NA;F;A;39.3;6.8;11.427;soxhlet;0.168044118
+NA;Barton Hill;2008-Mar-26;NA;F;J;39.7;6.43;0.897;soxhlet;0.139502333
+NA;Barton Hill;2008-Mar-26;NA;M;A;37.8;6.86;0.8965;soxhlet;0.130685131
+NA;Barton Hill;2008-Mar-26;NA;M;A;38.3;6.47;0.6209;soxhlet;0.095965997
+NA;Barton Hill;2008-Mar-26;NA;M;J;37.8;6.95;0.7712;soxhlet;0.110964029
+NA;Williams Preserve;2008-Feb-14;NA;F;A;36.3;NA;0.6146;soxhlet;NA
+NA;Williams Preserve;2008-Feb-14;NA;F;A;37.4;NA;0.53818;soxhlet;NA
+NA;Williams Preserve;2008-Feb-14;NA;F;A;36.3;NA;0.8467;soxhlet;NA
+NA;Williams Preserve;2008-Feb-14;NA;M;J;36.6;NA;0.5169;soxhlet;NA
+NA;Williams Preserve;2008-Feb-14;NA;M;A;38.3;NA;0.6248;soxhlet;NA
+NA;Williams Preserve;2008-Feb-14;NA;M;A;38.1;NA;0.8219;soxhlet;NA
