@@ -1,3 +1,54 @@
+#' @keywords internal
+pslash <- function(q, nu){
+  aux <-  function(x){
+    s_aux <- x^2/2
+    beta_aux <- nu + (1/2)
+    gama_aux <- zipfR::Igamma(beta_aux, s_aux)
+    r <- (nu/sqrt(2*pi))*(1/(s_aux^beta_aux))*zipfR::Igamma(beta_aux, s_aux)
+    return(r)
+  }
+
+  acumu_aux <- function(q) stats::integrate(aux, lower=-Inf, upper=q)$value
+  v.acumu_aux <- Vectorize(acumu_aux)
+  cdf <- v.acumu_aux(q)
+  cdf
+}
+
+#' @keywords internal
+qslash <- function(p, nu){
+
+  qtf <- function(input){
+    p <- input
+
+    if (!is.na(p)){
+      obj <- function(q){
+        pslash(q, nu) - p
+      }
+
+      nleqslv::nleqslv(stats::qnorm(p) / (0.5^(1/nu)), obj)$x
+    }else{
+      numeric(0)
+    }
+  }
+
+  q0 <- rep(0, length(p[p == 0.5]) )
+  q <- vector()
+  if (length(p[p != 0.5]) < 1){
+    q <- numeric(0)
+  } else{
+    q[p != 0.5 & p != 0 & p != 1] <-
+      as.numeric(apply(matrix(p[p != 0.5 & p != 0 & p != 1], ncol = 1),
+                       1, qtf))
+  }
+
+  q[p == 0] <- -Inf
+  q[p == 1] <- Inf
+  qtf <- c(q0, q)
+  index <- c(which(p == 0.5), which(p != 0.5))
+
+  qtf[sort(index, index.return = T)$ix]
+}
+
 
 #' Power Logit Distributions
 #'
@@ -161,17 +212,7 @@ pPL <- function(q, mu, sigma, lambda, zeta = 2, family, lower.tail = TRUE, log.p
     cdf <- GeneralizedHyperbolic::phyperb(z, mu = 0, delta = 1, alpha = zeta, beta = 0)
   }
   if(family == "SLASH"){
-    aux <-  function(x){
-      s_aux <- x^2/2
-      beta_aux <- zeta + (1/2)
-      gama_aux <- zipfR::Igamma(beta_aux, s_aux)
-      r <- (zeta/sqrt(2*pi))*(1/(s_aux^beta_aux))*zipfR::Igamma(beta_aux, s_aux)
-      return(r)
-    }
-
-    acumu_aux <- function(z) stats::integrate(aux, lower=-Inf, upper=z)$value
-    v.acumu_aux <- Vectorize(acumu_aux)
-    cdf <- v.acumu_aux(z)
+    cdf <- pslash(z, nu = zeta)
   }
 
   if (lower.tail == TRUE)
@@ -224,7 +265,7 @@ qPL <- function(p, mu, sigma, lambda, zeta = 2, family, lower.tail = TRUE, log.p
     z_p <- GeneralizedHyperbolic::qhyperb(p, mu = 0, delta = 1, alpha = zeta, beta = 0, lower.tail = TRUE)
   }
   if(family == "SLASH"){
-    z_p <- (qbeta(p, zeta, 1, lower.tail = TRUE)^(-1/2))*qnorm(p, lower.tail = TRUE)
+    z_p <- qslash(p, nu = zeta)
   }
 
   if(lambda == 0){
@@ -253,6 +294,12 @@ rPL <- function(n, mu, sigma, lambda, zeta = 2, family){
   n <- ceiling(n)
 
   p <- runif(n)
-  r <- qPL(p, mu = mu, sigma = sigma, lambda = lambda, zeta = zeta, family = family)
+  if(family == "SLASH"){
+    r <- (qbeta(p, zeta, 1, lower.tail = TRUE)^(-1/2))*qnorm(p, lower.tail = TRUE)
+  }else{
+    r <- qPL(p, mu = mu, sigma = sigma, lambda = lambda, zeta = zeta, family = family)
+  }
   r
 }
+
+

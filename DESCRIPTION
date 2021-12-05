@@ -25,6 +25,7 @@ Imports:
     gamlss.dist,
     GeneralizedHyperbolic,
     methods,
+    nleqslv,
     stats,
     VGAM,
     zipfR
