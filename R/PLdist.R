@@ -295,7 +295,12 @@ rPL <- function(n, mu, sigma, lambda, zeta = 2, family){
 
   p <- runif(n)
   if(family == "SLASH"){
-    r <- (qbeta(p, zeta, 1, lower.tail = TRUE)^(-1/2))*qnorm(p, lower.tail = TRUE)
+    z_p <- (qbeta(p, zeta, 1, lower.tail = TRUE)^(-1/2))*qnorm(p, lower.tail = TRUE)
+    if(lambda == 0){
+      suppressWarnings(r <- exp(log(mu)*exp(-sigma*z_p)))
+    }else{
+      suppressWarnings(r <- ((mu^lambda)*exp(sigma*z_p)/(1 - (mu^lambda)*(1 - exp(sigma*z_p))))^(1/lambda))
+    }
   }else{
     r <- qPL(p, mu = mu, sigma = sigma, lambda = lambda, zeta = zeta, family = family)
   }
