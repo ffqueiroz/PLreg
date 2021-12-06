@@ -1,0 +1,112 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# PLreg
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The **PLreg** package allows fitting power logit regression models. Diagnostic tools associated with the fitted model, such as the residuals, local influence measures, leverage measures, and goodness-of-
+fit statistics, are implemented. 
+
+## Installation
+
+You can install the development version of PLreg from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("ffqueiroz/PLreg")
+```
+
+## Main functions
+
+#### <tt>dPL</tt>, <tt>pPL</tt>, <tt>qPL</tt>, and <tt>rPL</tt>
+
+Currently, the $\textbf{PLreg}$ package include 7 members of the power logit class of distributions: the power logit normal, power logit Student-t, power logit type II logistic, power logit power exponential, power logit sinh-normal, power logit hyperbolic and power logit slash distributions. The package provides the  <tt>dPL</tt>, <tt>pPL</tt> and <tt>qPL</tt> functions  to compute the probability density function, cumulative distribution function and quantile function of the power logit distribution. Also, the <tt>rPL</tt> function may be used to generate random sample of variables with power logit distribution. The basic usages of these functions are:
+
+```{r usage functions, eval=FALSE}
+dPL(x, mu, sigma, lambda, zeta = 2, family, log = FALSE)
+
+pPL(q, mu, sigma, lambda, zeta = 2, family, lower.tail = TRUE, log.p = FALSE)
+
+qPL(p, mu, sigma, lambda, zeta = 2, family, lower.tail = TRUE, log.p = FALSE)
+
+rPL(n, mu, sigma, lambda, zeta = 2, family)
+```
+
+#### <tt>PLreg</tt> 
+
+The main function of the $\textbf{PLreg}$ package is represented by <tt>PLreg()</tt>, which allows to fit proportional data with power logit regression model; this explains the name. The arguments of this function are:
+
+```{r PLregfunction, eval = FALSE}
+PLreg(formula, data, subset, na.action, family = c("NO", "LO", "TF", "PE", "SN", "SLASH", "Hyp"), 
+      zeta = NULL, link = c("logit", "probit", "cloglog", "cauchit", "log", "loglog"), 
+      link.sigma = NULL, type = c("pML", "ML"), control = PLreg.control(...), 
+      model = TRUE, y = TRUE, x = FALSE, ...)
+```
+
+The <tt>PLreg()</tt> function returns an object of class "<tt>PLreg</tt>", similar to "<tt>betareg</tt>" and "<tt>glm</tt>" objects, which some methods available. The <tt>summary()</tt> method presents a standard output, with coefficient estimates, standard errors, partial Wald tests and p values for the regression coefficients, the overall goodness-of-fit measure, the pseudo $R^2$, etc.. The <tt>type</tt> argument in <tt>summary()</tt> specifies the type of residuals included in the output, currently three residuals are supported: <tt>"standardized", "quantile"</tt> and <tt>"deviance"</tt>. The <tt>plot()</tt> method draws graphs for diagnostic and influence analyses.
+
+#### <tt>extra.parameter</tt> 
+
+An important function in the $\textbf{PLreg}$ package is <tt>extra.parameter()</tt>. This function can be used to estimate the extra parameter of some power logit models. The basic usage is:
+
+```{r extraparameter, eval = FALSE}
+extra.parameter(object, lower, upper, grid = 10)
+```
+
+## Example
+
+```{r example}
+library(PLreg)
+## basic example code
+```
+
+In the following, a example is presented to illustrate the capacities of $\textbf{PLreg}$ package. We use the <tt>bodyfat_Aeolus</tt> data set, available in the package.
+```
+help(bodyfat_Aeolus, package = "PLreg")
+```
+
+We start out with a model where <tt>percentfat</tt> depends on the sex of the sample bat (<tt>sex</tt>), the hibernation time (<tt>days</tt>) and the year that the bat was sample (<tt>year</tt>). After fitting some models in power logit class, we choose the power logit power exponential regression model with constant dispersion as the best model. In order to fit this model, we first choose the best value for $\zeta$ by using the <tt>extra.parameter()</tt> function. In this case,  fit a power logit model with any fixed zeta, e.g., $\zeta = 2$, and then use this object in <tt>extra.parameter()</tt> function as in the following.
+
+```{r bodyfatreg_zeta, eval  = FALSE}
+fitPL_PE_start <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
+              family = "PE", zeta = 2)
+extra.parameter(fitPL_PE_start, lower = 1, upper = 2.5)
+```
+
+Then, fit the model with the choosed value.
+
+```{r bodyfatreg, eval = TRUE}
+fitPL_PE <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
+              family = "PE", zeta = 1.7)
+summary(fitPL_PE)
+```
+
+The goodness of fit is assessed using diagnostic graphs through the plot method.
+
+```{r bodyfat_diagnostics, eval = FALSE}
+plot(fitPL_PE, which = 1:4)
+```
+
+Further details and examples on the R package $\textbf{PLreg}$ can be found using the help on R, typing:
+
+```
+help("PLreg")
+```
+
+## Reference
+
+Queiroz, F.F. and Ferrari, S.L.P. (2022). Power logit regression for modeling bounded data. 
