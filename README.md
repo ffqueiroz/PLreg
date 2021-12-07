@@ -25,16 +25,16 @@ devtools::install_github("ffqueiroz/PLreg")
 
 #### <tt>dPL</tt>, <tt>pPL</tt>, <tt>qPL</tt>, and <tt>rPL</tt>
 
-Currently, the **PLreg** package include 7 members of the power logit
+Currently, the **PLreg** package includes 7 members of the power logit
 class of distributions: the power logit normal, power logit Student-t,
 power logit type II logistic, power logit power exponential, power logit
 sinh-normal, power logit hyperbolic and power logit slash distributions.
-The package provides the <tt>dPL</tt>, <tt>pPL</tt> and <tt>qPL</tt>
+The package provides the <tt>dPL</tt>, <tt>pPL</tt>, and <tt>qPL</tt>
 functions to compute the probability density function, cumulative
 distribution function and quantile function of the power logit
 distribution. Also, the <tt>rPL</tt> function may be used to generate
-random sample of variables with power logit distribution. The basic
-usages of these functions are:
+random samples from power logit distributions. The basic usages of these
+functions are:
 
 ``` r
 dPL(x, mu, sigma, lambda, zeta = 2, family, log = FALSE)
@@ -48,10 +48,9 @@ rPL(n, mu, sigma, lambda, zeta = 2, family)
 
 #### <tt>PLreg</tt>
 
-The main function of the **PLreg** package is represented by
-<tt>PLreg()</tt>, which allows to fit proportional data with power logit
-regression model; this explains the name. The arguments of this function
-are:
+The main function of the **PLreg** package is <tt>PLreg()</tt>, which
+allows to fitting power logit regression model to proportional data;
+this explains the name. The arguments of <tt>PLreg()</tt> are:
 
 ``` r
 PLreg(formula, data, subset, na.action, family = c("NO", "LO", "TF", "PE", "SN", "SLASH", "Hyp"), 
@@ -62,21 +61,21 @@ PLreg(formula, data, subset, na.action, family = c("NO", "LO", "TF", "PE", "SN",
 
 The <tt>PLreg()</tt> function returns an object of class
 “<tt>PLreg</tt>”, similar to “<tt>betareg</tt>” and “<tt>glm</tt>”
-objects, which some methods available. The <tt>summary()</tt> method
-presents a standard output, with coefficient estimates, standard errors,
+objects, for which some methods available. The <tt>summary()</tt> method
+returns a standard output, with coefficient estimates, standard errors,
 partial Wald tests and p values for the regression coefficients, the
 overall goodness-of-fit measure, the pseudo *R*<sup>2</sup>, etc.. The
 <tt>type</tt> argument in <tt>summary()</tt> specifies the type of
-residuals included in the output, currently three residuals are
-supported: <tt>“standardized”, “quantile”</tt> and <tt>“deviance”</tt>.
-The <tt>plot()</tt> method draws graphs for diagnostic and influence
-analyses.
+residuals included in the output; currently three residuals are
+supported: <tt>“standardized”</tt>, </tt>“quantile”</tt> and
+<tt>“deviance”</tt>. The <tt>plot()</tt> method draws graphs for
+diagnostic and influence analyses.
 
 #### <tt>extra.parameter</tt>
 
 An important function in the **PLreg** package is
-<tt>extra.parameter()</tt>. This function can be used to estimate the
-extra parameter of some power logit models. The basic usage is:
+<tt>extra.parameter()</tt>. It can be used to estimate the extra
+parameter of some power logit models. The basic usage is:
 
 ``` r
 extra.parameter(object, lower, upper, grid = 10)
@@ -94,21 +93,18 @@ library(PLreg)
 ## basic example code
 ```
 
-In the following, a example is presented to illustrate the capacities of
-**PLreg** package. We use the <tt>bodyfat\_Aeolus</tt> data set,
+In the following, an example is presented to illustrate the capacities
+of **PLreg** package. We use the <tt>bodyfat\_Aeolus</tt> data set,
 available in the package.
 
     help(bodyfat_Aeolus, package = "PLreg")
 
-We start out with a model where <tt>percentfat</tt> depends on the sex
-of the sample bat (<tt>sex</tt>), the hibernation time (<tt>days</tt>)
-and the year that the bat was sample (<tt>year</tt>). After fitting some
-models in power logit class, we choose the power logit power exponential
-regression model with constant dispersion as the best model. In order to
-fit this model, we first choose the best value for *ζ* by using the
-<tt>extra.parameter()</tt> function. In this case, fit a power logit
-model with any fixed zeta, e.g., *ζ* = 2, and then use this object in
-<tt>extra.parameter()</tt> function as in the following.
+The response variable is <tt>percentfat</tt> and the covariates are the
+sex of the sampled bat (<tt>sex</tt>), the hibernation time
+(<tt>days</tt>) and the year that the bat was sampled (<tt>year</tt>).
+We start by fitting a power logit power exponential regression model
+with constant dispersion and *ζ* = 2. To select a suitable value for
+*ζ*, use the <tt>extra.parameter()</tt> function as follows.
 
 ``` r
 fitPL_PE_start <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
@@ -116,7 +112,7 @@ fitPL_PE_start <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
 extra.parameter(fitPL_PE_start, lower = 1, upper = 2.5)
 ```
 
-Then, fit the model with the choosed value.
+Then, fit the model with the chosen value for *ζ*.
 
 ``` r
 fitPL_PE <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
@@ -165,7 +161,7 @@ plot(fitPL_PE, which = 1:4)
 ```
 
 Further details and examples on the R package **PLreg** can be found
-using the help on R, typing:
+using the help on R by typing:
 
     help("PLreg")
 
