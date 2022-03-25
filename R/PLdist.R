@@ -80,7 +80,8 @@ qslash <- function(p, nu){
 #'     The \code{family} argument defines the density generator \eqn{r(\cdot)}, which may depend on an extra parameter (\code{zeta}).
 #' @return \code{dPL} gives the density, \code{pPL} gives the distribution function, \code{qPL} gives the quantile function,
 #'     and \code{rPL} generates random variables.
-#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022) \emph{The Power Logit Distribution}. ...
+#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
+#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
 #' @examples
 #' dPL(0.2, mu = 0.3, sigma = 1, lambda=1, zeta = 2, family = "PE")
 #' mu = 0.3; sigma = 1; lambda = 2

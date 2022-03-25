@@ -241,8 +241,8 @@ legend(x = 0.5,
 
 }
 \references{
-Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for modeling
-bounded data. \cr \cr
+Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression
+for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
 Lemonte, A. J. and Bazan, J. L. (2015). New class of Johnson SB distributions
 and its associated regression model for rates and proportions. \emph{Biometrical Journal}. 58:727-746.
 }

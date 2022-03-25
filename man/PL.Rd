@@ -92,5 +92,6 @@ text(0.55, 0.83, paste("(", 0.5, ",", round(p, 2), ")"), font = 2,
      cex = 0.8, col = "red")
 }
 \references{
-Queiroz, F. F. and Ferrari, S. L. P. (2022) \emph{The Power Logit Distribution}. ...
+Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression
+for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
 }

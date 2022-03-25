@@ -161,8 +161,8 @@ make.dmu.deta <- function(linkstr){
 #' @export
 #' @author Francisco Felipe de Queiroz (\email{ffelipeq@@outlook.com}) and Silvia L. P. Ferrari.
 #' @seealso \code{\link{summary.PLreg}}, \code{\link{PLreg.control}}, \code{\link{residuals.PLreg}}
-#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for modeling
-#'       bounded data. \cr \cr
+#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
+#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
 #'       Lemonte, A. J. and Bazan, J. L. (2015). New class of Johnson SB distributions
 #'       and its associated regression model for rates and proportions. \emph{Biometrical Journal}. 58:727-746.
 #' @examples
@@ -1091,8 +1091,8 @@ model.matrix.PLreg <- function(object, model = c("median", "dispersion"), ...) {
 #'     matrix, being useful for detecting leverage observations. The distribution
 #'     of the standardized residuals is unknown.
 #'
-#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for modeling
-#'       bounded data. \cr \cr
+#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
+#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
 #'       Dunn, P. K. and Smyth, G. K. (1996) Randomized quantile residuals.
 #'      \emph{Journal of Computational and Graphical Statistics}, 5:236-244.
 #' @seealso \code{\link{PLreg}}, \code{\link{plot.PLreg}}, \code{\link{envelope}}, \code{\link{influence}}
@@ -1234,8 +1234,8 @@ residuals.PLreg <- function(object,
 #'     \item{GL}{The diagonal elements of the generalized leverage matrix.}
 #' @seealso \code{\link{PLreg}}, \code{\link{residuals.PLreg}}, \code{\link{envelope}},
 #'     \code{\link{plot.PLreg}}
-#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for modeling
-#'       bounded data.
+#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
+#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
 #' @examples
 #'data("Firm")
 #'
@@ -1545,8 +1545,8 @@ plot.PLreg <- function(x, which = 1:4, type = "standardized", pch = "+",
 #'     approximately 100*\code{conf} of the residuals are expected to be inside
 #'     the envelope.
 #' @export
-#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for modeling
-#'       bounded data. \cr \cr
+#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
+#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
 #'      Atkinson, A. C. (1985) Plots, transformations and regression: an introduction
 #'      to graphical methods of diagnostic regression analysis.
 #'      \emph{Oxford Science Publications}, Oxford.
@@ -1773,8 +1773,8 @@ envelope <- function(object,type = c("quantile", "deviance", "standardized"),
 #'     \item{Upsilon.values}{-2\code{logLik} evaluated at each value of zeta.}
 #'     \item{loglik.values}{Upsilon measure evaluated at each value of zeta.}
 #' @seealso \code{\link{PLreg}}
-#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for modeling
-#'       bounded data.
+#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
+#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
 #' @examples
 #'data("bodyfat_Aeolus")
 #'
