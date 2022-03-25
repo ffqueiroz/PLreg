@@ -1,6 +1,6 @@
 Package: PLreg
 Title: Power logit regression for modeling bounded data
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: c(
   person("Felipe", "Queiroz", email = "ffelipeq@outlook.com", role = c("aut", "cre")),
   person("Silvia", "Ferrari", email = "silviaferrari@usp.br", role = "aut"))
