@@ -25,16 +25,17 @@ devtools::install_github("ffqueiroz/PLreg")
 
 #### <tt>dPL</tt>, <tt>pPL</tt>, <tt>qPL</tt>, and <tt>rPL</tt>
 
-Currently, the **PLreg** package includes 7 members of the power logit
-class of distributions: the power logit normal, power logit Student-t,
-power logit type II logistic, power logit power exponential, power logit
-sinh-normal, power logit hyperbolic and power logit slash distributions.
-The package provides the <tt>dPL</tt>, <tt>pPL</tt>, and <tt>qPL</tt>
-functions to compute the probability density function, cumulative
-distribution function and quantile function of the power logit
-distribution. Also, the <tt>rPL</tt> function may be used to generate
-random samples from power logit distributions. The basic usages of these
-functions are:
+Currently, the
+![\\textbf{PLreg}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7BPLreg%7D "\textbf{PLreg}")
+package includes 7 members of the power logit class of distributions:
+the power logit normal, power logit Student-t, power logit type II
+logistic, power logit power exponential, power logit sinh-normal, power
+logit hyperbolic and power logit slash distributions. The package
+provides the <tt>dPL</tt>, <tt>pPL</tt>, and <tt>qPL</tt> functions to
+compute the probability density function, cumulative distribution
+function and quantile function of the power logit distribution. Also,
+the <tt>rPL</tt> function may be used to generate random samples from
+power logit distributions. The basic usages of these functions are:
 
 ``` r
 dPL(x, mu, sigma, lambda, zeta = 2, family, log = FALSE)
@@ -48,9 +49,11 @@ rPL(n, mu, sigma, lambda, zeta = 2, family)
 
 #### <tt>PLreg</tt>
 
-The main function of the **PLreg** package is <tt>PLreg()</tt>, which
-allows to fitting power logit regression model to proportional data;
-this explains the name. The arguments of <tt>PLreg()</tt> are:
+The main function of the
+![\\textbf{PLreg}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7BPLreg%7D "\textbf{PLreg}")
+package is <tt>PLreg()</tt>, which allows to fitting power logit
+regression model to proportional data; this explains the name. The
+arguments of <tt>PLreg()</tt> are:
 
 ``` r
 PLreg(formula, data, subset, na.action, family = c("NO", "LO", "TF", "PE", "SN", "SLASH", "Hyp"), 
@@ -64,18 +67,20 @@ The <tt>PLreg()</tt> function returns an object of class
 objects, for which some methods available. The <tt>summary()</tt> method
 returns a standard output, with coefficient estimates, standard errors,
 partial Wald tests and p values for the regression coefficients, the
-overall goodness-of-fit measure, the pseudo *R*<sup>2</sup>, etc.. The
-<tt>type</tt> argument in <tt>summary()</tt> specifies the type of
-residuals included in the output; currently three residuals are
+overall goodness-of-fit measure, the pseudo
+![R^2](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;R%5E2 "R^2"),
+etc.. The <tt>type</tt> argument in <tt>summary()</tt> specifies the
+type of residuals included in the output; currently three residuals are
 supported: <tt>“standardized”</tt>, </tt>“quantile”</tt> and
 <tt>“deviance”</tt>. The <tt>plot()</tt> method draws graphs for
 diagnostic and influence analyses.
 
 #### <tt>extra.parameter</tt>
 
-An important function in the **PLreg** package is
-<tt>extra.parameter()</tt>. It can be used to estimate the extra
-parameter of some power logit models. The basic usage is:
+An important function in the
+![\\textbf{PLreg}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7BPLreg%7D "\textbf{PLreg}")
+package is <tt>extra.parameter()</tt>. It can be used to estimate the
+extra parameter of some power logit models. The basic usage is:
 
 ``` r
 extra.parameter(object, lower, upper, grid = 10)
@@ -94,8 +99,10 @@ library(PLreg)
 ```
 
 In the following, an example is presented to illustrate the capacities
-of **PLreg** package. We use the <tt>bodyfat\_Aeolus</tt> data set,
-available in the package.
+of
+![\\textbf{PLreg}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7BPLreg%7D "\textbf{PLreg}")
+package. We use the <tt>bodyfat_Aeolus</tt> data set, available in the
+package.
 
     help(bodyfat_Aeolus, package = "PLreg")
 
@@ -103,8 +110,11 @@ The response variable is <tt>percentfat</tt> and the covariates are the
 sex of the sampled bat (<tt>sex</tt>), the hibernation time
 (<tt>days</tt>) and the year that the bat was sampled (<tt>year</tt>).
 We start by fitting a power logit power exponential regression model
-with constant dispersion and *ζ* = 2. To select a suitable value for
-*ζ*, use the <tt>extra.parameter()</tt> function as follows.
+with constant dispersion and
+![\\zeta = 2](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Czeta%20%3D%202 "\zeta = 2").
+To select a suitable value for
+![\\zeta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Czeta "\zeta"),
+use the <tt>extra.parameter()</tt> function as follows.
 
 ``` r
 fitPL_PE_start <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
@@ -112,7 +122,8 @@ fitPL_PE_start <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
 extra.parameter(fitPL_PE_start, lower = 1, upper = 2.5)
 ```
 
-Then, fit the model with the chosen value for *ζ*.
+Then, fit the model with the chosen value for
+![\\zeta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Czeta "\zeta").
 
 ``` r
 fitPL_PE <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
@@ -160,12 +171,14 @@ method.
 plot(fitPL_PE, which = 1:4)
 ```
 
-Further details and examples on the R package **PLreg** can be found
-using the help on R by typing:
+Further details and examples on the R package
+![\\textbf{PLreg}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7BPLreg%7D "\textbf{PLreg}")
+can be found using the help on R by typing:
 
     help("PLreg")
 
 ## Reference
 
-Queiroz, F.F. and Ferrari, S.L.P. (2022). Power logit regression for
+Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for
 modeling bounded data.
+![\\textit{arXiv}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextit%7BarXiv%7D "\textit{arXiv}"):2202.01697.

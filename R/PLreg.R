@@ -75,7 +75,7 @@ make.dmu.deta <- function(linkstr){
 #' @param link.sigma an optional character that specifies the link function of the dispersion submodel (sigma).
 #'     The "\code{log}", "\code{sqrt}" functions are supported. The default is \code{log}.
 #' @param type character specifying the type of estimator for the skewness parameter.
-#'     Currently, penalized maximum likelihood ("\code{pML}") and maximum likekihood ("\code{ML}") are supported.
+#'     Currently, penalized maximum likelihood ("\code{pML}") and maximum likelihood ("\code{ML}") are supported.
 #'     If the skewness parameter is fixed, \code{ML} type is used.
 #' @param control a list of control arguments specified via \code{\link{PLreg.control}}.
 #' @param model,y,x logicals. If \code{TRUE} the corresponding components of the fit
@@ -126,7 +126,7 @@ make.dmu.deta <- function(linkstr){
 #'   \item{family}{a character specifying the \code{family} used.}
 #'   \item{method}{the method argument passed to the optim call.}
 #'   \item{control}{the control arguments passed to the optim call.}
-#'   \item{start}{a vector with the starting values used in the interative process.}
+#'   \item{start}{a vector with the starting values used in the iterative process.}
 #'   \item{nobs}{number of observations.}
 #'   \item{df.null}{residual degrees of freedom in the null model
 #'       (constant median and dispersion), i.e., \eqn{n-3}.}
@@ -162,7 +162,7 @@ make.dmu.deta <- function(linkstr){
 #' @author Francisco Felipe de Queiroz (\email{ffelipeq@@outlook.com}) and Silvia L. P. Ferrari.
 #' @seealso \code{\link{summary.PLreg}}, \code{\link{PLreg.control}}, \code{\link{residuals.PLreg}}
 #' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
-#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
+#'       for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
 #'       Lemonte, A. J. and Bazan, J. L. (2015). New class of Johnson SB distributions
 #'       and its associated regression model for rates and proportions. \emph{Biometrical Journal}. 58:727-746.
 #' @examples
@@ -202,7 +202,7 @@ make.dmu.deta <- function(linkstr){
 #'#extra.parameter(fitPL, lower = 1.2, upper = 4, grid = 10)
 #'#plot(fitPL, type = "standardized")
 #'#envelope(fitPL, type = "standardized")
-#'
+#'\dontrun{
 #'fitPL_wo72 <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost,
 #'                    data = Firm[-72,],
 #'                    family = "SLASH",
@@ -251,7 +251,7 @@ make.dmu.deta <- function(linkstr){
 #'       legend = parameters,
 #'       col = c("black", "blue", "red", "green"),
 #'       lty = c(1, 2, 3, 4),
-#'       cex = 0.6)
+#'       cex = 0.6)}
 #'
 #' @importFrom stats .getXlevels as.formula cor delete.response make.link model.matrix
 #'     model.response optim sd terms var dcauchy fitted median model.frame na.omit
@@ -1092,7 +1092,7 @@ model.matrix.PLreg <- function(object, model = c("median", "dispersion"), ...) {
 #'     of the standardized residuals is unknown.
 #'
 #' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
-#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
+#'       for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
 #'       Dunn, P. K. and Smyth, G. K. (1996) Randomized quantile residuals.
 #'      \emph{Journal of Computational and Graphical Statistics}, 5:236-244.
 #' @seealso \code{\link{PLreg}}, \code{\link{plot.PLreg}}, \code{\link{envelope}}, \code{\link{influence}}
@@ -1235,7 +1235,7 @@ residuals.PLreg <- function(object,
 #' @seealso \code{\link{PLreg}}, \code{\link{residuals.PLreg}}, \code{\link{envelope}},
 #'     \code{\link{plot.PLreg}}
 #' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
-#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
+#'       for modeling bounded data. \emph{arXiv}:2202.01697.
 #' @examples
 #'data("Firm")
 #'
@@ -1546,7 +1546,7 @@ plot.PLreg <- function(x, which = 1:4, type = "standardized", pch = "+",
 #'     the envelope.
 #' @export
 #' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
-#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
+#'       for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
 #'      Atkinson, A. C. (1985) Plots, transformations and regression: an introduction
 #'      to graphical methods of diagnostic regression analysis.
 #'      \emph{Oxford Science Publications}, Oxford.
@@ -1774,7 +1774,7 @@ envelope <- function(object,type = c("quantile", "deviance", "standardized"),
 #'     \item{loglik.values}{Upsilon measure evaluated at each value of zeta.}
 #' @seealso \code{\link{PLreg}}
 #' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
-#'       for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
+#'       for modeling bounded data. \emph{arXiv}:2202.01697.
 #' @examples
 #'data("bodyfat_Aeolus")
 #'

@@ -67,7 +67,7 @@ envelope(fitPL, type = "deviance")}
 }
 \references{
 Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression
-for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
+for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
 Atkinson, A. C. (1985) Plots, transformations and regression: an introduction
 to graphical methods of diagnostic regression analysis.
 \emph{Oxford Science Publications}, Oxford.

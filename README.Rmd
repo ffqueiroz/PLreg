@@ -109,4 +109,4 @@ help("PLreg")
 
 ## Reference
 
-Queiroz, F.F. and Ferrari, S.L.P. (2022). Power logit regression for modeling bounded data. 
+Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression for modeling bounded data. $\textit{arXiv}$:2202.01697.

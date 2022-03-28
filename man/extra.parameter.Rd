@@ -48,7 +48,7 @@ extra.parameter(fit1, lower = 1, upper = 4, grid = 15)}
 }
 \references{
 Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression
-for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
+for modeling bounded data. \emph{arXiv}:2202.01697.
 }
 \seealso{
 \code{\link{PLreg}}

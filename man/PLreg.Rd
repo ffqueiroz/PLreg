@@ -55,7 +55,7 @@ The "\code{logit}", "\code{probit}", "\code{cloglog}", "\code{cauchit}",
 The "\code{log}", "\code{sqrt}" functions are supported. The default is \code{log}.}
 
 \item{type}{character specifying the type of estimator for the skewness parameter.
-Currently, penalized maximum likelihood ("\code{pML}") and maximum likekihood ("\code{ML}") are supported.
+Currently, penalized maximum likelihood ("\code{pML}") and maximum likelihood ("\code{ML}") are supported.
 If the skewness parameter is fixed, \code{ML} type is used.}
 
 \item{control}{a list of control arguments specified via \code{\link{PLreg.control}}.}
@@ -85,7 +85,7 @@ on the maximization of the likelihood for all the parameters.}
 \item{family}{a character specifying the \code{family} used.}
 \item{method}{the method argument passed to the optim call.}
 \item{control}{the control arguments passed to the optim call.}
-\item{start}{a vector with the starting values used in the interative process.}
+\item{start}{a vector with the starting values used in the iterative process.}
 \item{nobs}{number of observations.}
 \item{df.null}{residual degrees of freedom in the null model
 (constant median and dispersion), i.e., \eqn{n-3}.}
@@ -188,7 +188,7 @@ summary(fitPL)
 #extra.parameter(fitPL, lower = 1.2, upper = 4, grid = 10)
 #plot(fitPL, type = "standardized")
 #envelope(fitPL, type = "standardized")
-
+\dontrun{
 fitPL_wo72 <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost,
                    data = Firm[-72,],
                    family = "SLASH",
@@ -237,12 +237,12 @@ legend(x = 0.5,
       legend = parameters,
       col = c("black", "blue", "red", "green"),
       lty = c(1, 2, 3, 4),
-      cex = 0.6)
+      cex = 0.6)}
 
 }
 \references{
 Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression
-for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
+for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
 Lemonte, A. J. and Bazan, J. L. (2015). New class of Johnson SB distributions
 and its associated regression model for rates and proportions. \emph{Biometrical Journal}. 58:727-746.
 }

@@ -48,7 +48,7 @@ qqline(res_quantile)
 }
 \references{
 Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression
-for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697. \cr \cr
+for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
 Dunn, P. K. and Smyth, G. K. (1996) Randomized quantile residuals.
 \emph{Journal of Computational and Graphical Statistics}, 5:236-244.
 }

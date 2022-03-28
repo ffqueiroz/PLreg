@@ -1,14 +1,14 @@
 Package: PLreg
-Title: Power logit regression for modeling bounded data
+Title: Power Logit Regression for Modeling Bounded Data
 Version: 0.1.0
 Authors@R: c(
   person("Felipe", "Queiroz", email = "ffelipeq@outlook.com", role = c("aut", "cre")),
   person("Silvia", "Ferrari", email = "silviaferrari@usp.br", role = "aut"))
-Description: The package allows fitting power logit regression models for bounded
+Description: Fitting power logit regression models for bounded
   continuous data, in which the density generator may be normal, Student-t, 
   power exponential, slash, hyperbolic, sinh-normal, or type II logistic. 
   Diagnostic tools associated with the fitted model, such as the residuals, 
-  local influence measures, leverage measures, and goodnessof-fit statistics,
+  local influence measures, leverage measures, and goodness-of-fit statistics,
   are implemented. The estimation process follows the maximum likelihood approach
   and, currently, the package supports two types of estimators: the usual maximum 
   likelihood estimator and the penalized maximum likelihood estimator.
@@ -36,4 +36,4 @@ Suggests:
 Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
-VignetteBuilder: knitr
+

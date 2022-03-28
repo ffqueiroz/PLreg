@@ -39,7 +39,7 @@ plot(Firm$sizelog, influence_measures$GL, pch = "+")}
 }
 \references{
 Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression
-for modeling bounded data. \emph{arXiv preprint arXiv}:2202.01697.
+for modeling bounded data. \emph{arXiv}:2202.01697.
 }
 \seealso{
 \code{\link{PLreg}}, \code{\link{residuals.PLreg}}, \code{\link{envelope}},
