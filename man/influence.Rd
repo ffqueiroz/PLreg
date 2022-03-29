@@ -30,7 +30,7 @@ data("Firm")
 
 fitPL <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost,
               data = Firm, family = "SLASH", zeta = 2.13)
-\dontrun{
+\donttest{
 influence_measures = influence(fitPL, graph = FALSE)
 plot(influence_measures$case.weights, type = "h", ylim = c(0,1))
 plot(influence_measures$totalLI, type = "h", ylim = c(0,6))

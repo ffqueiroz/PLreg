@@ -188,7 +188,7 @@ summary(fitPL)
 #extra.parameter(fitPL, lower = 1.2, upper = 4, grid = 10)
 #plot(fitPL, type = "standardized")
 #envelope(fitPL, type = "standardized")
-\dontrun{
+\donttest{
 fitPL_wo72 <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost,
                    data = Firm[-72,],
                    family = "SLASH",

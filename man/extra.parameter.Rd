@@ -43,7 +43,7 @@ fit1 <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
              family = "PE", zeta = 2)
 summary(fit1)
 # Choosing the best value for zeta
-\dontrun{
+\donttest{
 extra.parameter(fit1, lower = 1, upper = 4, grid = 15)}
 }
 \references{

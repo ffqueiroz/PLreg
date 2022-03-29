@@ -13,6 +13,10 @@
 
 \item{...}{currently not used.}
 }
+\value{
+\code{residuals} method for object of class "\code{PLreg}" returns a vector
+with the residuals of the type specified in the \code{type} argument.
+}
 \description{
 The function provides three types of residuals for power logit regression models:
 quantile, deviance and standardized.

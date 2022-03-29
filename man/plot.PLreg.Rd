@@ -17,13 +17,17 @@ see \code{\link{residuals.PLreg}}. Default is \code{type = "standardized"}.}
 
 \item{pch, las, cex, ...}{graphical parameters (see \code{\link[graphics]{par}})}
 }
+\value{
+\code{plot} method for \code{\link{PLreg}} objects returns 7 types
+of diagnostic plots.
+}
 \description{
 This function provides plots for diagnostic analysis of
 power logit regression models.
 }
 \details{
 The \code{plot} method for \code{\link{PLreg}} objects provides 7 types
-of diagnostic plots.
+of diagnostic plots in the following order.
 \describe{
 \item{Residuals vs indexes of obs.}{An index plot of the residuals
 versus indexes of observations.}
@@ -41,6 +45,8 @@ versus the residuals. For some power logit models, the \eqn{v(z)} function
 may be interpreted as weights in the estimation process. If \code{family = "NO"},
 the \eqn{v(z)} function is constant.}
 }
+The \code{which} argument can be used to select a subset of the implemented plots.
+Default is \code{which = 1:4}.
 }
 \examples{
 data("Firm")

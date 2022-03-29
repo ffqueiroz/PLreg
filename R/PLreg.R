@@ -202,7 +202,7 @@ make.dmu.deta <- function(linkstr){
 #'#extra.parameter(fitPL, lower = 1.2, upper = 4, grid = 10)
 #'#plot(fitPL, type = "standardized")
 #'#envelope(fitPL, type = "standardized")
-#'\dontrun{
+#'\donttest{
 #'fitPL_wo72 <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost,
 #'                    data = Firm[-72,],
 #'                    family = "SLASH",
@@ -864,6 +864,14 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
 #' @param model character specifying for which component of the model the
 #'      coefficients/covariance are extracted.
 #' @param ... currently not used.
+#' 
+#' @details A set of methods for objects of class "\code{PLreg}", including methods
+#'      for the functions \code{\link{summary}} and \code{\link{vcov}},
+#'      which print the estimated coefficients along with some other information and
+#'      presents the covariance matrix, respectively. The \code{summary} also presents
+#'      the partial Wald tests for the model parameters. Finally, \code{summary} returns
+#'      an object of class "\code{summary.PLreg}" containing information to be printed
+#'      using the \code{print} method.
 #'
 #' @export
 #' @seealso \code{\link{PLreg}}
@@ -1090,7 +1098,10 @@ model.matrix.PLreg <- function(object, model = c("median", "dispersion"), ...) {
 #'     residual. These residuals take into account the diagonal elements of the \eqn{H}
 #'     matrix, being useful for detecting leverage observations. The distribution
 #'     of the standardized residuals is unknown.
-#'
+#'     
+#' @return \code{residuals} method for object of class "\code{PLreg}" returns a vector
+#'     with the residuals of the type specified in the \code{type} argument.
+#' 
 #' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
 #'       for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
 #'       Dunn, P. K. and Smyth, G. K. (1996) Randomized quantile residuals.
@@ -1241,7 +1252,7 @@ residuals.PLreg <- function(object,
 #'
 #'fitPL <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost,
 #'               data = Firm, family = "SLASH", zeta = 2.13)
-#'\dontrun{
+#'\donttest{
 #'influence_measures = influence(fitPL, graph = FALSE)
 #'plot(influence_measures$case.weights, type = "h", ylim = c(0,1))
 #'plot(influence_measures$totalLI, type = "h", ylim = c(0,6))
@@ -1400,7 +1411,7 @@ influence <- function(model, graph = TRUE, ...){
 #' @param pch,las,cex,... graphical parameters (see \code{\link[graphics]{par}})
 #'
 #' @details The \code{plot} method for \code{\link{PLreg}} objects provides 7 types
-#'     of diagnostic plots.
+#'     of diagnostic plots in the following order.
 #'     \describe{
 #'         \item{Residuals vs indexes of obs.}{An index plot of the residuals
 #'             versus indexes of observations.}
@@ -1418,6 +1429,10 @@ influence <- function(model, graph = TRUE, ...){
 #'             may be interpreted as weights in the estimation process. If \code{family = "NO"},
 #'             the \eqn{v(z)} function is constant.}
 #'      }
+#'      The \code{which} argument can be used to select a subset of the implemented plots.
+#'      Default is \code{which = 1:4}.
+#' @return \code{plot} method for \code{\link{PLreg}} objects returns 7 types
+#'     of diagnostic plots. 
 #' @importFrom graphics abline identify mtext par points text title
 #' @seealso \code{\link{PLreg}}, \code{\link{residuals.PLreg}}, \code{\link{envelope}}, \code{\link{influence}}
 #' @examples
@@ -1544,6 +1559,10 @@ plot.PLreg <- function(x, which = 1:4, type = "standardized", pch = "+",
 #'     probability plots with simulated envelope. Under the correct model,
 #'     approximately 100*\code{conf} of the residuals are expected to be inside
 #'     the envelope.
+#' 
+#' @return \code{envelope} returns normal probability plot with simulated envelopes
+#'     for the residuals. 
+#'
 #' @export
 #' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
 #'       for modeling bounded data. \emph{arXiv}:2202.01697. \cr \cr
@@ -1559,7 +1578,7 @@ plot.PLreg <- function(x, which = 1:4, type = "standardized", pch = "+",
 #'fitPL <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost, data = Firm,
 #'               family = "SLASH", zeta = 2.13)
 #'summary(fitPL)
-#'\dontrun{
+#'\donttest{
 #'envelope(fitPL, type = "standardized")
 #'envelope(fitPL, type = "quantile")
 #'envelope(fitPL, type = "deviance")}
@@ -1783,7 +1802,7 @@ envelope <- function(object,type = c("quantile", "deviance", "standardized"),
 #'              family = "PE", zeta = 2)
 #'summary(fit1)
 #'# Choosing the best value for zeta
-#'\dontrun{
+#'\donttest{
 #'extra.parameter(fit1, lower = 1, upper = 4, grid = 15)}
 #' @export
 extra.parameter <- function(object, lower, upper, grid = 10, graph = TRUE){

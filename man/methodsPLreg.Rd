@@ -39,6 +39,15 @@ coefficients/covariance are extracted.}
 \description{
 Some S3 Methods for PLreg regression models.
 }
+\details{
+A set of methods for objects of class "\code{PLreg}", including methods
+for the functions \code{\link{summary}} and \code{\link{vcov}},
+which print the estimated coefficients along with some other information and
+presents the covariance matrix, respectively. The \code{summary} also presents
+the partial Wald tests for the model parameters. Finally, \code{summary} returns
+an object of class "\code{summary.PLreg}" containing information to be printed
+using the \code{print} method.
+}
 \examples{
 data("bodyfat_Aeolus")
 

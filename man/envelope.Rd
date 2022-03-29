@@ -42,6 +42,10 @@ the name of the used residual.}
 \item{ylim, xlim}{numeric values, specifying the left/lower limit and the right/upper
 limit of the scale.}
 }
+\value{
+\code{envelope} returns normal probability plot with simulated envelopes
+for the residuals.
+}
 \description{
 \code{envelope} is used to display normal probability plots with simulated
 envelope of residuals for the power logit models. Currently, three types of
@@ -59,7 +63,7 @@ data("Firm")
 fitPL <- PLreg(firmcost ~ sizelog + indcost | sizelog + indcost, data = Firm,
               family = "SLASH", zeta = 2.13)
 summary(fitPL)
-\dontrun{
+\donttest{
 envelope(fitPL, type = "standardized")
 envelope(fitPL, type = "quantile")
 envelope(fitPL, type = "deviance")}
