@@ -1,4 +1,5 @@
-This is the second submission.
+## Resubmission
+This is a resubmission.
 
 ## NOTES
 > If there are references describing the methods in your package, please
