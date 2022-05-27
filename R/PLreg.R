@@ -403,7 +403,7 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
   sigma_mu.eta   <- sigma_linkobj$mu.eta
   sigma_dmu.deta <- sigma_linkobj$dmu.deta
 
-  logity <- linkfun(y)
+  logity <- log(y/(1-y))
   ocontrol <- control
 
   lambda_fix <- control$lambda
@@ -681,7 +681,7 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
     Jlambda.lambda <- t(rep.int(1, n))%*%W3%*%rep.int(1, n)
     Jbeta.tau      <- t(X)%*%W4%*%T1%*%T2%*%S
     Jbeta.lambda   <- t(X)%*%W5%*%T1%*%rep.int(1, n)
-    Jtau.lambda    <- t(S)%*%W6%*%T1%*%rep.int(1, n)
+    Jtau.lambda    <- t(S)%*%W6%*%T2%*%rep.int(1, n)
 
     J <- rbind(cbind(Jbeta.beta, Jbeta.tau, Jbeta.lambda),
                cbind(t(Jbeta.tau), Jtau.tau, Jtau.lambda),
