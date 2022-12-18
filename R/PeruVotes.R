@@ -14,7 +14,7 @@
 #'     the proportion of blank votes using a beta rectangular regression model. Lemonte and
 #'     Bazan (2015) also analyzed the data using GJS regression models.
 #' @keywords datasets
-#' @source \url{https://www.pe.undp.org/}
+#' @source \url{http://www.undp.org/es/peru}
 #' @references Bayes, C., Bazan, J. L. and Garcia, C. (2012). A new robust regression model for proportions.
 #'     \emph{Bayesian Analysis}. 7:771-796 \cr \cr
 #'     Lemonte, A. J. and Bazan, J. L. (2015). New class of Johnson SB distributions

@@ -12,7 +12,7 @@ A data frame with 194 rows and 2 variables:
 }
 }
 \source{
-\url{https://www.pe.undp.org/}
+\url{http://www.undp.org/es/peru}
 }
 \usage{
 data(PeruVotes)

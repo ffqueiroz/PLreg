@@ -7,6 +7,18 @@ This is a resubmission. In this version I have:
 
 * Changed the first sentence of the description field of the DESCRIPTION file.
 
+## NOTES
+
+> Found the following (possibly) invalid URLs:
+     URL: https://www.pe.undp.org/ (moved to https://www.undp.org/es/peru)
+       From: man/PeruVotes.Rd
+       Status: 301
+       Message: Moved Permanently
+
+> Please change http --> https, add trailing slashes, or follow moved
+content as appropriate.
+
+Done. We changed the URL.
 
 ## R CMD check results
 There were no ERRORs, WARNINGs or NOTEs. 
@@ -14,3 +26,4 @@ There were no ERRORs, WARNINGs or NOTEs.
 
 ## Downstream dependencies
 There are currently no downstream dependencies for this package.
+
