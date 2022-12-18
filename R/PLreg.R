@@ -734,7 +734,8 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
 
   if(is.null(lambda_fix)){
     if(type == "ML"){
-      theta.opt <- optim(par = c(start,0), fn = logL, gr = U, method = method, control = control, hessian = TRUE)
+      theta.opt <- optim(par = c(start, 0), fn = logL, gr = U, method = method, 
+                         control = control, hessian = TRUE)
       beta   <- theta.opt$par[seq.int(length.out = p)]
       tau    <- theta.opt$par[seq.int(length.out = q) + p]
       lambda <- exp(theta.opt$par[seq.int(length.out = 1) + p + q])
@@ -822,8 +823,9 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
   }
 
   optim.fit <- if(type.used == "pML") fixed.opt else theta.opt
-  ll        <- logL(c(beta, tau, log(lambda)))
-
+  #ll        <- logL(c(beta, tau, log(lambda)))
+  ll        <- logLp(log(lambda))
+  
   Ups.zeta <- Upsilon(zeta)
 
   pseudor2 <- ifelse(var(eta.1) * var(linkfun(y)) <= 0, NA, cor(eta.1, linkfun(y))^2)
@@ -1866,4 +1868,84 @@ extra.parameter <- function(object, lower, upper, grid = 10, graph = TRUE){
 }
 
 
+#' Sandwich Variance and Covariance Matrix for PLreg Objects
+#'
+#' The \code{sandwich} function provides an estimate for the asymptotic variance 
+#' and covariance matrix of the parameter estimators of the power logit (or log-log) 
+#' regression models based on de sandwich estimator described bellow.
+#'
+#' @param object fitted model object of class "\code{PLreg}".
+#' @return \code{extra.parameter} returns a matrix containing the sandwich variance and
+#' covariance matrix estimate.
+#' @importFrom stats vcov
+#' @seealso \code{\link{PLreg}}
+#' @references Queiroz, F. F. and Ferrari, S. L. P. (2022). Power logit regression 
+#'       for modeling bounded data. \emph{arXiv}:2202.01697.
+#' @examples
+#'data("Firm")
+#'
+#'fit <- PLreg(percentfat ~ days + sex + year, data = bodyfat_Aeolus,
+#'              family = "PE", zeta = 2)
+#'sandwich(fit)
+#' @export
+sandwich <- function(object){
+  beta <- object$coef$median
+  tau <- object$coef$dispersion
+  lambda <- object$coef$skewness
+  
+  X <- model.matrix(object, model = "median")
+  S <- model.matrix(object, model = "dispersion")
+  y <- object$y
+  
+  mu    <- object$fitted.values
+  sigma <- object$link$dispersion$linkinv(S%*%tau)
+  
+  v <- object$v
+  if(lambda == 0){
+    z <- (-1/sigma)*(log(log(y)/log(mu)))
+  }else{
+    z <- (1/sigma)*(VGAM::logitlink(y^lambda) - VGAM::logitlink(mu^lambda))
+  }
+  
+  d1dot  <- as.vector(1/object$link$median$mu.eta(X%*%beta))
+  d2dot  <- as.vector(1/object$link$dispersion$mu.eta(S%*%tau))
+  
+  T1 <- diag(1/d1dot)
+  T2 <- diag(1/d2dot)
+  
+  W <- diag(as.vector(z*v))
+  
+  if(lambda == 0){
+    mu_star <- as.vector(-1/(sigma*mu*log(mu)))
+  }else{
+    mu_star <- as.vector(lambda/(sigma*mu*(1 - mu^lambda)))
+    lambda_star <- as.vector((1/lambda) + ((y^lambda)*(log(y))/(1-y^lambda)) -
+                               z*v*(1/sigma)*((log(y)/(1 - y^lambda)) -
+                                                (log(mu)/(1 - mu^lambda))))
+  }
+  sigma_star <- as.vector((z^2*v - 1)/sigma)
+  m.lambda   <- rep.int(1, length(y))
+  
+  if(is.null(object$lambda)){
+    Psi_beta.beta     <- t(X)%*%diag(as.vector((W%*%T1%*%mu_star)^2))%*%X
+    Psi_beta.tau      <- t(X)%*%diag(as.vector((W%*%T1%*%mu_star)*(T2%*%sigma_star)))%*%S
+    Psi_beta.lambda   <- t(X)%*%diag(as.vector((W%*%T1%*%mu_star)*(lambda_star)))%*%m.lambda
+    Psi_tau.tau       <- t(S)%*%diag(as.vector((T2%*%sigma_star)^2))%*%S
+    Psi_tau.lambda    <- t(S)%*%diag(as.vector((T2%*%sigma_star)*(lambda_star)))%*%m.lambda
+    Psi_lambda.lambda <- t(m.lambda)%*%diag(as.vector((lambda_star)^2))%*%m.lambda
+    Psi <- rbind(cbind(Psi_beta.beta, Psi_beta.tau, Psi_beta.lambda),
+                 cbind(t(Psi_beta.tau), Psi_tau.tau, Psi_tau.lambda),
+                 cbind(t(Psi_beta.lambda), t(Psi_tau.lambda), Psi_lambda.lambda))
+  }else{
+    Psi_beta.beta <- t(X)%*%diag(as.vector((W%*%T1%*%mu_star)^2))%*%X
+    Psi_beta.tau  <- t(X)%*%diag(as.vector((W%*%T1%*%mu_star)*(T2%*%sigma_star)))%*%S
+    Psi_tau.tau   <- t(S)%*%diag(as.vector((T2%*%sigma_star)^2))%*%S
+    Psi <- rbind(cbind(Psi_beta.beta, Psi_beta.tau),
+                 cbind(t(Psi_beta.tau), Psi_tau.tau))
+  }
+  
+  Omega    <- solve(vcov(object))
+  
+  solve(Omega)%*%Psi%*%solve(Omega)
+}
 
