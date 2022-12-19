@@ -9,8 +9,9 @@ This is a resubmission. In this version I have:
 
 ## NOTES
 
-> Found the following (possibly) invalid URLs:
-     URL: https://www.pe.undp.org/ (moved to https://www.undp.org/es/peru)
+>  Found the following (possibly) invalid URLs:
+     URL: http://www.undp.org/es/peru (moved to
+https://www.undp.org/es/peru)
        From: man/PeruVotes.Rd
        Status: 301
        Message: Moved Permanently
@@ -18,7 +19,7 @@ This is a resubmission. In this version I have:
 > Please change http --> https, add trailing slashes, or follow moved
 content as appropriate.
 
-Done. We changed the URL.
+Done.
 
 ## R CMD check results
 There were no ERRORs, WARNINGs or NOTEs. 
