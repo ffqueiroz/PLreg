@@ -823,9 +823,8 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
   }
 
   optim.fit <- if(type.used == "pML") fixed.opt else theta.opt
-  #ll        <- logL(c(beta, tau, log(lambda)))
-  ll        <- logLp(log(lambda))
-  
+  ll        <- logL(c(beta, tau, log(lambda)))
+
   Ups.zeta <- Upsilon(zeta)
 
   pseudor2 <- ifelse(var(eta.1) * var(linkfun(y)) <= 0, NA, cor(eta.1, linkfun(y))^2)
