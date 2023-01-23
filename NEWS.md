@@ -1,10 +1,5 @@
-# PLreg 0.3.0
-
-## Major changes
-
-* Correction of the hessian matrix in the PLreg function.
-* Added sandwich function.
+# PLreg 0.3.1
 
 ## Minor changes
 
-* Change in the first sentence of the description field of the DESCRIPTION file.
+* Correct the value exported by the loglik object of the PLreg function.
