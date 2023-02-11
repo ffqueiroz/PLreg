@@ -1,4 +1,4 @@
-# PLreg 0.4.1
+# PLreg 0.4.0
 
 ## Minor changes
 
