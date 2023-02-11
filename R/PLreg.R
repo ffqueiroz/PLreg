@@ -85,17 +85,17 @@ make.dmu.deta <- function(linkstr){
 #' @param S numeric regressor matrix for the dispersion submodel.
 #' @param ... arguments passed to \code{\link{PLreg.control}}.
 #'
-#' @details The power logit regression models, proposed by Queiroz and Ferrari (2021), is useful in
+#' @details The power logit regression models, proposed by Queiroz and Ferrari (2022), is useful in
 #'     situations when the response variable is continuous and bounded on the unit interval (0, 1).
 #'     The median and the dispersion parameters are modeled through parametric link
 #'     functions. The models depend on a skewness parameter (called \eqn{\lambda}). When the skewness parameter is fixed
 #'     and equal to 1, the power logit models coincide with the GJS regression models
-#'     (Lemonte and Bazan, 2016). Queiroz and Ferrari (2021)  suggest using a penalized maximum
+#'     (Lemonte and Bazan, 2016). Queiroz and Ferrari (2022)  suggest using a penalized maximum
 #'     likelihood method to estimate the parameters. This method is implemented in
 #'     \code{PLreg} by default when \eqn{\lambda} is not fixed. If convergence is not reached,
 #'     maximum likelihood estimation is performed. The estimation
 #'     process uses \code{\link{optim}}. If no starting values are specified,
-#'     the \code{PLreg} function uses those suggested by Queiroz and Ferrari (2021).
+#'     the \code{PLreg} function uses those suggested by Queiroz and Ferrari (2022).
 #'     This function also fits the log-log regression models by setting \eqn{\lambda}
 #'     at zero (\eqn{\lambda = 0} represents \eqn{\lambda \rightarrow 0^+}).\cr \cr
 #'     The formulation of the model has the same structure as in the usual functions
@@ -134,6 +134,8 @@ make.dmu.deta <- function(linkstr){
 #'   \item{lambda}{value of the skewness parameter lambda
 #'       (\code{NULL} when lambda is not fixed).}
 #'   \item{loglik}{log-likelihood of the fitted model.}
+#'   \item{loglikp}{penalized profile log-likelihood for lambda. If lambda is 
+#'       equal to zero, \code{loglikp} returns 1.}
 #'   \item{vcov}{covariance matrix of all the parameters.}
 #'   \item{pseudo.r.squared}{pseudo R-squared value.}
 #'   \item{Upsilon.zeta}{an overall goodness-of-fit measure.}
@@ -824,7 +826,7 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
 
   optim.fit <- if(type.used == "pML") fixed.opt else theta.opt
   ll        <- logL(c(beta, tau, log(lambda)))
-
+  llp       <- ifelse(lambda == 0, 1, logLp(log(lambda)))
   Ups.zeta <- Upsilon(zeta)
 
   pseudor2 <- ifelse(var(eta.1) * var(linkfun(y)) <= 0, NA, cor(eta.1, linkfun(y))^2)
@@ -846,7 +848,7 @@ PLreg.fit <- function(X, y, S = NULL, family, type = "pML", zeta = zeta, link = 
               optim = optim.fit , family = family, method = method, control = ocontrol,
               start = start, nobs = n, df.null = n - ifelse(is.null(lambda_fix), 3, 2),
               df.residual = n - p - q - ifelse(is.null(lambda_fix), 1, 0),
-              lambda = lambda_fix, loglik = ll, vcov = vcov,
+              lambda = lambda_fix, loglik = ll, loglikp = llp, vcov = vcov,
               pseudo.r.squared = pseudor2, Upsilon.zeta = Ups.zeta,
               link = list(median = linkobj, dispersion = sigma_linkobj), converged = converged,
               zeta = zeta, type = type.used, v = v)
@@ -1241,7 +1243,7 @@ residuals.PLreg <- function(object,
 #' @param ... currently not used.
 #' @return \code{influence} returns a list with three objects:
 #'     \item{case.weights}{The values of \eqn{h_{max}} eigenvector based on case
-#'     weights perturbation scheme (see Queiroz and Ferrari (2021)).}
+#'     weights perturbation scheme (see Queiroz and Ferrari (2022)).}
 #'     \item{totalLI}{The total local influence (see Lesaffre and Verbeke (1998))}
 #'     \item{GL}{The diagonal elements of the generalized leverage matrix.}
 #' @seealso \code{\link{PLreg}}, \code{\link{residuals.PLreg}}, \code{\link{envelope}},
@@ -1774,7 +1776,7 @@ envelope <- function(object,type = c("quantile", "deviance", "standardized"),
 #'
 #' The \code{extra.parameter} function is used to select the extra parameter
 #' of some power logit models. It provides plots of -2\code{logLik} and the
-#' Upsilon measure (see Queiroz and Ferrari (2021)) versus \eqn{\zeta},
+#' Upsilon measure (see Queiroz and Ferrari (2022)) versus \eqn{\zeta},
 #' the extra parameter.
 #'
 #' @param object fitted model object of class "\code{PLreg}".
@@ -1871,7 +1873,7 @@ extra.parameter <- function(object, lower, upper, grid = 10, graph = TRUE){
 #'
 #' The \code{sandwich} function provides an estimate for the asymptotic variance 
 #' and covariance matrix of the parameter estimators of the power logit (or log-log) 
-#' regression models based on de sandwich estimator described bellow.
+#' regression models based on de sandwich estimator (see Queiroz and Ferrari (2022)).
 #'
 #' @param object fitted model object of class "\code{PLreg}".
 #' @return \code{extra.parameter} returns a matrix containing the sandwich variance and
@@ -1948,3 +1950,100 @@ sandwich <- function(object){
   solve(Omega)%*%Psi%*%solve(Omega)
 }
 
+#' Confidence Interval for the Skewness Parameter
+#' 
+#' The \code{CI.lambda} function provides a plot of the profile (penalized)
+#' likelihood ratio statistics for lambda, useful to obtain confidence
+#' intervals for the skewness parameter (see Queiroz and Ferrari (2022)). 
+#' 
+#' @param object fitted model object of class "\code{PLreg}".
+#' @param conf.coef confidence level of the confidence interval. Default is 0.95.
+#' @param lower a numeric value representing the lower limit of the interval for
+#'     the skewness parameter. If \code{lower = NULL}, the lower limit is selected
+#'     by the function.
+#' @param upper a numeric value representing the upper limit of the interval for
+#'     the skewness parameter. If \code{upper = NULL}, the upper limit is selected
+#'     by the function.
+#'
+#' @return The function returns a plot of the profile penalized likelihood ratio
+#'  statistics for lambda with a horizontal dashed line, indicating the confidence
+#'  interval for lambda. It also shows the confidence interval obtained. 
+#' @importFrom stats update qchisq
+#' @examples
+#'data("PeruVotes")
+#'
+#' fitPL <- PLreg(votes ~ HDI | HDI, 
+#'   data = PeruVotes, 
+#'   family = "TF", zeta = 5)
+#'\donttest{
+#' CI.lambda(fitPL)}
+#' @export
+#'
+CI.lambda <- function(object, conf.coef = 0.95, lower = NULL, upper = NULL){
+  if(is.numeric(object$lambda)){
+    stop("This model has fixed lambda.")
+  }
+  
+  if(is.null(lower) & is.null(upper)){
+    Wp <- NULL
+    conf.coef <- 0.95
+    seq.lambda <- seq(0.001, 50, 2)
+    for(i in 1:length(seq.lambda)){
+      Wp[i] <- 2*(object$loglikp - 
+                    update(object, control = 
+                             PLreg.control(lambda = seq.lambda[i]))$loglikp)
+    }
+    cond <- seq.lambda[Wp <= qchisq(conf.coef, 1)]
+    
+    lower <- ifelse(cond[1] == 0.001, 0.0001, cond[1] - 2)
+    upper <- max(cond) + 2
+    seq.lambda2 <- seq(lower, upper, by = 0.2)
+    for(i in 1:length(seq.lambda2)){
+      Wp[i] <- 2*(object$loglikp - 
+                    update(object, control = 
+                             PLreg.control(lambda = seq.lambda2[i]))$loglikp)
+    }
+    plot(seq.lambda2, Wp, type = "l", las = 1, 
+         ylab = "profile likelihood ratio statistic", xlab = expression(lambda))
+    abline(h = qchisq(conf.coef, 1), lty = 2, col = "gray")
+    abline(v = 0.01, lty = 4, col = "gray")
+    cond <- seq.lambda2[Wp <= qchisq(conf.coef, 1)]
+    CI <- c(min(cond), max(cond))
+  }else{
+    if(lower <= 0){
+      stop("lambda must be positive (greater than zero).")
+    }
+    if(is.null(lower) | is.null(upper)){
+      stop(cat(paste("Specify the ", 
+                     ifelse(is.null(lower), "lower", "upper"), " bound", sep = "")))
+    }
+    Wp_lower <- 2*(object$loglikp - update(object, control = 
+                                             PLreg.control(lambda = lower))$loglikp)
+    Wp_upper <- 2*(object$loglikp - update(object, control = 
+                                             PLreg.control(lambda = upper))$loglikp)
+    if(Wp_upper <= qchisq(conf.coef, 1)){
+      stop("The upper bound of the confidence interval is greater than the upper
+           value specified for lambda. Specify a larger upper limit.")
+    }
+    if((lower >= 0.01) & (Wp_lower <= qchisq(conf.coef, 1))){
+      stop("The lower bound of the confidence interval is smaller than the lower
+           value specified for lambda. Specify a smaller lower limit.")
+    }
+    
+    seq.lambda2 <- seq(lower, upper, by = 0.1)
+    for(i in 1:length(seq.lambda2)){
+      Wp[i] <- 2*(object$loglikp - 
+                    update(object, control = 
+                             PLreg.control(lambda = seq.lambda2[i]))$loglikp)
+    }
+    plot(seq.lambda2, Wp, type = "l", las = 1, 
+         ylab = "profile likelihood ratio statistic", xlab = expression(lambda))
+    abline(h = qchisq(conf.coef, 1), lty = 2, col = "gray")
+    abline(v = 0.01, lty = 4, col = "gray")
+    cond <- seq.lambda2[Wp <= qchisq(conf.coef, 1)]
+    CI <- c(min(cond), max(cond))
+  }
+  
+  cat(paste("\nThe confidence interval for lambda is: (", round(CI[1], 2),
+            ", ", round(CI[2], 2), ")", sep = ""))
+}

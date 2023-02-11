@@ -17,7 +17,7 @@ influence(model, graph = TRUE, ...)
 \value{
 \code{influence} returns a list with three objects:
 \item{case.weights}{The values of \eqn{h_{max}} eigenvector based on case
-weights perturbation scheme (see Queiroz and Ferrari (2021)).}
+weights perturbation scheme (see Queiroz and Ferrari (2022)).}
 \item{totalLI}{The total local influence (see Lesaffre and Verbeke (1998))}
 \item{GL}{The diagonal elements of the generalized leverage matrix.}
 }

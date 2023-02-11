@@ -93,6 +93,8 @@ on the maximization of the likelihood for all the parameters.}
 \item{lambda}{value of the skewness parameter lambda
 (\code{NULL} when lambda is not fixed).}
 \item{loglik}{log-likelihood of the fitted model.}
+\item{loglikp}{penalized profile log-likelihood for lambda. If lambda is
+equal to zero, \code{loglikp} returns 1.}
 \item{vcov}{covariance matrix of all the parameters.}
 \item{pseudo.r.squared}{pseudo R-squared value.}
 \item{Upsilon.zeta}{an overall goodness-of-fit measure.}
@@ -124,17 +126,17 @@ Both median and dispersion of the response variable are modeled through
 parametric functions.
 }
 \details{
-The power logit regression models, proposed by Queiroz and Ferrari (2021), is useful in
+The power logit regression models, proposed by Queiroz and Ferrari (2022), is useful in
 situations when the response variable is continuous and bounded on the unit interval (0, 1).
 The median and the dispersion parameters are modeled through parametric link
 functions. The models depend on a skewness parameter (called \eqn{\lambda}). When the skewness parameter is fixed
 and equal to 1, the power logit models coincide with the GJS regression models
-(Lemonte and Bazan, 2016). Queiroz and Ferrari (2021)  suggest using a penalized maximum
+(Lemonte and Bazan, 2016). Queiroz and Ferrari (2022)  suggest using a penalized maximum
 likelihood method to estimate the parameters. This method is implemented in
 \code{PLreg} by default when \eqn{\lambda} is not fixed. If convergence is not reached,
 maximum likelihood estimation is performed. The estimation
 process uses \code{\link{optim}}. If no starting values are specified,
-the \code{PLreg} function uses those suggested by Queiroz and Ferrari (2021).
+the \code{PLreg} function uses those suggested by Queiroz and Ferrari (2022).
 This function also fits the log-log regression models by setting \eqn{\lambda}
 at zero (\eqn{\lambda = 0} represents \eqn{\lambda \rightarrow 0^+}).\cr \cr
 The formulation of the model has the same structure as in the usual functions

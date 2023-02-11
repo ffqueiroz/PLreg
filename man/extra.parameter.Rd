@@ -32,7 +32,7 @@ Default is \code{grid=10}. If \code{grid} is less than 10, then \code{grid=10}.}
 \description{
 The \code{extra.parameter} function is used to select the extra parameter
 of some power logit models. It provides plots of -2\code{logLik} and the
-Upsilon measure (see Queiroz and Ferrari (2021)) versus \eqn{\zeta},
+Upsilon measure (see Queiroz and Ferrari (2022)) versus \eqn{\zeta},
 the extra parameter.
 }
 \examples{

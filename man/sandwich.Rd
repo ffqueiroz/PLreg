@@ -16,7 +16,7 @@ covariance matrix estimate.
 \description{
 The \code{sandwich} function provides an estimate for the asymptotic variance
 and covariance matrix of the parameter estimators of the power logit (or log-log)
-regression models based on de sandwich estimator described bellow.
+regression models based on de sandwich estimator (see Queiroz and Ferrari (2022)).
 }
 \examples{
 data("Firm")

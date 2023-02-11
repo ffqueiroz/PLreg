@@ -1,5 +1,9 @@
-# PLreg 0.3.1
+# PLreg 0.4.1
 
 ## Minor changes
 
-* Correct the value exported by the loglik object of the PLreg function.
+* Small changes in the documentation of some functions.
+
+## Miner changes
+
+* Added the CI.lambda function.
