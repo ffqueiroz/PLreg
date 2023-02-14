@@ -1983,31 +1983,56 @@ CI.lambda <- function(object, conf.coef = 0.95, lower = NULL, upper = NULL){
   if(is.numeric(object$lambda)){
     stop("This model has fixed lambda.")
   }
-  
+  if(conf.coef <= 0){
+    stop("The confidence level must be greater than zero.")
+  }
   if(is.null(lower) & is.null(upper)){
-    Wp <- NULL
-    conf.coef <- 0.95
-    seq.lambda <- seq(0.001, 50, 2)
-    for(i in 1:length(seq.lambda)){
-      Wp[i] <- 2*(object$loglikp - 
-                    update(object, control = 
-                             PLreg.control(lambda = seq.lambda[i]))$loglikp)
+    seq.lambda <- seq(0.001, 40, 2)
+    grid <- length(seq.lambda)
+    Wp <- rep(0, grid)
+    conv  <- matrix(0,grid,1)
+    i <- 1
+    while(i <= grid){
+      lambda <- seq.lambda[i]
+      val <- suppressWarnings(try(update(object, 
+                                         control = PLreg.control(lambda = lambda), 
+                                         silent = TRUE)))
+      if(is.list(val)){
+        Wp[i] <- 2*(object$loglikp - val$loglikp)
+        conv[i] <- 1
+      }
+      i <- i + 1
     }
+    Wp <- Wp[conv == 1]
+    
     cond <- seq.lambda[Wp <= qchisq(conf.coef, 1)]
     
     lower <- ifelse(cond[1] == 0.001, 0.0001, cond[1] - 2)
     upper <- max(cond) + 2
     seq.lambda2 <- seq(lower, upper, by = 0.2)
-    for(i in 1:length(seq.lambda2)){
-      Wp[i] <- 2*(object$loglikp - 
-                    update(object, control = 
-                             PLreg.control(lambda = seq.lambda2[i]))$loglikp)
+    grid <- length(seq.lambda2)
+    Wp <- rep(0, grid)
+    conv  <- matrix(0,grid,1)
+    i <- 1
+    bar <- txtProgressBar(min = 1, max = grid, initial = 0, width = 50, char = "+", style = 3)
+    while(i <= grid){
+      lambda <- seq.lambda2[i]
+      val <- suppressWarnings(try(update(object, 
+                                         control = PLreg.control(lambda = lambda), 
+                                         silent = TRUE)))
+      if(is.list(val)){
+        Wp[i] <- 2*(object$loglikp - val$loglikp)
+        conv[i] <- 1
+      }
+      i <- i + 1
+      setTxtProgressBar(bar,i)
     }
-    plot(seq.lambda2, Wp, type = "l", las = 1, 
-         ylab = "profile likelihood ratio statistic", xlab = expression(lambda))
-    abline(h = qchisq(conf.coef, 1), lty = 2, col = "gray")
+    
+    plot(seq.lambda2[conv == 1], Wp[conv == 1], type = "l", las = 1, 
+         ylab = "penalized profile likelihood ratio statistic", xlab = expression(lambda))
+    abline(h = qchisq(conf.coef, 1), lty = 2, col = "gray", lwd = 2)
     abline(v = 0.01, lty = 4, col = "gray")
-    cond <- seq.lambda2[Wp <= qchisq(conf.coef, 1)]
+    cond <- seq.lambda2[conv == 1][Wp[conv == 1] <= qchisq(conf.coef, 1)]
     CI <- c(min(cond), max(cond))
   }else{
     if(lower <= 0){
@@ -2030,20 +2055,33 @@ CI.lambda <- function(object, conf.coef = 0.95, lower = NULL, upper = NULL){
            value specified for lambda. Specify a smaller lower limit.")
     }
     
-    seq.lambda2 <- seq(lower, upper, by = 0.1)
-    for(i in 1:length(seq.lambda2)){
-      Wp[i] <- 2*(object$loglikp - 
-                    update(object, control = 
-                             PLreg.control(lambda = seq.lambda2[i]))$loglikp)
+    seq.lambda2 <- seq(lower, upper, by = 0.2)
+    grid <- length(seq.lambda2)
+    Wp <- rep(0, grid)
+    conv  <- matrix(0,grid,1)
+    i <- 1
+    bar <- txtProgressBar(min = 1, max = grid, initial = 0, width = 50, char = "+", style = 3)
+    while(i <= grid){
+      lambda <- seq.lambda2[i]
+      val <- suppressWarnings(try(update(object, 
+                                         control = PLreg.control(lambda = lambda), 
+                                         silent = TRUE)))
+      if(is.list(val)){
+        Wp[i] <- 2*(object$loglikp - val$loglikp)
+        conv[i] <- 1
+      }
+      i <- i + 1
+      setTxtProgressBar(bar,i)
     }
-    plot(seq.lambda2, Wp, type = "l", las = 1, 
-         ylab = "profile likelihood ratio statistic", xlab = expression(lambda))
-    abline(h = qchisq(conf.coef, 1), lty = 2, col = "gray")
+
+    plot(seq.lambda2[conv == 1], Wp[conv == 1], type = "l", las = 1, 
+         ylab = "penalized profile likelihood ratio statistic", xlab = expression(lambda))
+    abline(h = qchisq(conf.coef, 1), lty = 2, col = "gray", lwd = 2)
     abline(v = 0.01, lty = 4, col = "gray")
-    cond <- seq.lambda2[Wp <= qchisq(conf.coef, 1)]
+    cond <- seq.lambda2[conv == 1][Wp[conv == 1] <= qchisq(conf.coef, 1)]
     CI <- c(min(cond), max(cond))
   }
   
   cat(paste("\nThe confidence interval for lambda is: (", round(CI[1], 2),
-            ", ", round(CI[2], 2), ")", sep = ""))
+            ", ", round(CI[2], 2), ").", sep = ""))
 }

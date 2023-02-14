@@ -1,4 +1,4 @@
-# PLreg 0.4.0
+# PLreg 0.4.1
 
 ## Minor changes
 
@@ -6,4 +6,4 @@
 
 ## Miner changes
 
-* Added the CI.lambda function.
+* Update the CI.lambda function.

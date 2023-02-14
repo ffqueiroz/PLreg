@@ -1,9 +1,8 @@
 ## Resubmission
-This is a resubmission. In this version I have:
+This is a resubmission. In this version I:
 
-* Added the CI.lambda function.
-* Small changes in the documentation of some functions.
-* The PLreg function now returns the penalized profile likelihood for lambda.
+* Updated the CI.lambda function.
+* Did some small changes in the documentation of some functions.
 
 
 ## R CMD check results
